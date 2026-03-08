@@ -14,6 +14,6 @@
   },
   "The Caves": {
     "connects_to": [],
-    "requires": "|The Caves Unlock| AND (|Progressive Cat:2| OR (|Progressive Cat| AND |@Slot Unlocks:3|))"
+    "requires": "|The Caves Unlock| AND (|Progressive Cat:2| OR (|Progressive Cat| AND |@Item Slots:3|))"
   }
 }
