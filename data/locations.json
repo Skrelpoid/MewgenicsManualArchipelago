@@ -117,7 +117,7 @@
     "category": [
       "The Sewers"
     ],
-    "requires": "|Progressive Cat| OR |@Slot Unlocks:ALL|"
+    "requires": "|Progressive Cat| OR |@Item Slots:ALL|"
   },
   {
     "name": "The Sewers Hard Combat 2",
@@ -125,7 +125,7 @@
     "category": [
       "The Sewers"
     ],
-    "requires": "|Progressive Cat| OR |@Slot Unlocks:ALL|"
+    "requires": "|Progressive Cat| OR |@Item Slots:ALL|"
   },
   {
     "name": "The Sewers Mini Boss",
@@ -141,7 +141,7 @@
     "category": [
       "The Sewers"
     ],
-    "requires": "|Progressive Cat:2| OR (|Progressive Cat| AND |@Slot Unlocks:3|)"
+    "requires": "|Progressive Cat:2| OR (|Progressive Cat| AND |@Item Slots:3|)"
   },
   {
     "name": "The Caves Combat 1",
@@ -189,7 +189,7 @@
     "category": [
       "The Caves"
     ],
-    "requires": "(|Progressive Cat:3| AND |@Slot Unlocks:2|) OR (|Progressive Cat:2| AND |@Slot Unlocks:ALL|)"
+    "requires": "(|Progressive Cat:3| AND |@Item Slots:2|) OR (|Progressive Cat:2| AND |@Item Slots:ALL|)"
   },
   {
     "name": "The Caves Hard Combat 2",
@@ -197,7 +197,7 @@
     "category": [
       "The Caves"
     ],
-    "requires": "(|Progressive Cat:3| AND |@Slot Unlocks:2|) OR (|Progressive Cat:2| AND |@Slot Unlocks:ALL|)"
+    "requires": "(|Progressive Cat:3| AND |@Item Slots:2|) OR (|Progressive Cat:2| AND |@Item Slots:ALL|)"
   },
   {
     "name": "The Caves Mini Boss",
@@ -205,7 +205,7 @@
     "category": [
       "The Caves"
     ],
-    "requires": "(|Progressive Cat:3| AND |@Slot Unlocks:2|) OR (|Progressive Cat:2| AND |@Slot Unlocks:ALL|)"
+    "requires": "(|Progressive Cat:3| AND |@Item Slots:2|) OR (|Progressive Cat:2| AND |@Item Slots:ALL|)"
   },
   {
     "name": "The Caves Boss",
@@ -213,7 +213,7 @@
     "category": [
       "The Caves"
     ],
-    "requires": "(|Progressive Cat:3| AND |@Slot Unlocks:2| AND |Progressive Skill:2|) OR (|Progressive Cat:2| AND |@Slot Unlocks:ALL|  AND |Progressive Skill:3|)",
+    "requires": "(|Progressive Cat:3| AND |@Item Slots:2| AND |Progressive Skill:2|) OR (|Progressive Cat:2| AND |@Item Slots:ALL|  AND |Progressive Skill:3|)",
     "victory": true
   },
   {
@@ -221,14 +221,14 @@
     "category": [
       "Challenges"
     ],
-    "requires": "(|Progressive Cat:3| AND |@Slot Unlocks:1| AND |Progressive Skill:1|) OR (|Progressive Cat:2| AND |@Slot Unlocks:3|  AND |Progressive Skill:2|) OR (|Progressive Cat| AND |@Slot Unlocks:ALL|  AND |Progressive Skill:4|)"
+    "requires": "(|Progressive Cat:3| AND |@Item Slots:1| AND |Progressive Skill:1|) OR (|Progressive Cat:2| AND |@Item Slots:3|  AND |Progressive Skill:2|) OR (|Progressive Cat| AND |@Item Slots:ALL|  AND |Progressive Skill:4|)"
   },
   {
     "name": "3 Round (Mini-)Boss Win",
     "category": [
       "Challenges"
     ],
-    "requires": "(|Progressive Cat:3| AND |@Slot Unlocks:1| AND |Progressive Skill:1|) OR (|Progressive Cat:2| AND |@Slot Unlocks:3|  AND |Progressive Skill:2|) OR (|Progressive Cat| AND |@Slot Unlocks:ALL|  AND |Progressive Skill:4|)"
+    "requires": "(|Progressive Cat:3| AND |@Item Slots:1| AND |Progressive Skill:1|) OR (|Progressive Cat:2| AND |@Item Slots:3|  AND |Progressive Skill:2|) OR (|Progressive Cat| AND |@Item Slots:ALL|  AND |Progressive Skill:4|)"
   },
   {
     "name": "Strength Event",
