@@ -1,0 +1,282 @@
+[
+  {
+    "name": "The Alley Combat 1",
+    "region": "The Alley",
+    "category": [
+      "The Alley"
+    ],
+    "requires": ""
+  },
+  {
+    "name": "The Alley Combat 2",
+    "region": "The Alley",
+    "category": [
+      "The Alley"
+    ],
+    "requires": ""
+  },
+  {
+    "name": "The Alley Combat 3",
+    "region": "The Alley",
+    "category": [
+      "The Alley"
+    ],
+    "requires": ""
+  },
+  {
+    "name": "The Alley Combat 4",
+    "region": "The Alley",
+    "category": [
+      "The Alley"
+    ],
+    "requires": ""
+  },
+  {
+    "name": "The Alley Combat 5",
+    "region": "The Alley",
+    "category": [
+      "The Alley"
+    ],
+    "requires": ""
+  },
+  {
+    "name": "The Alley Hard Combat 1",
+    "region": "The Alley",
+    "category": [
+      "The Alley"
+    ],
+    "requires": ""
+  },
+  {
+    "name": "The Alley Hard Combat 2",
+    "region": "The Alley",
+    "category": [
+      "The Alley"
+    ],
+    "requires": ""
+  },
+  {
+    "name": "The Alley Mini Boss",
+    "region": "The Alley",
+    "category": [
+      "The Alley"
+    ],
+    "requires": ""
+  },
+  {
+    "name": "The Alley Boss",
+    "region": "The Alley",
+    "category": [
+      "The Alley"
+    ],
+    "requires": ""
+  },
+  {
+    "name": "The Sewers Combat 1",
+    "region": "The Sewers",
+    "category": [
+      "The Sewers"
+    ],
+    "requires": ""
+  },
+  {
+    "name": "The Sewers Combat 2",
+    "region": "The Sewers",
+    "category": [
+      "The Sewers"
+    ],
+    "requires": ""
+  },
+  {
+    "name": "The Sewers Combat 3",
+    "region": "The Sewers",
+    "category": [
+      "The Sewers"
+    ],
+    "requires": ""
+  },
+  {
+    "name": "The Sewers Combat 4",
+    "region": "The Sewers",
+    "category": [
+      "The Sewers"
+    ],
+    "requires": ""
+  },
+  {
+    "name": "The Sewers Combat 5",
+    "region": "The Sewers",
+    "category": [
+      "The Sewers"
+    ],
+    "requires": ""
+  },
+  {
+    "name": "The Sewers Hard Combat 1",
+    "region": "The Sewers",
+    "category": [
+      "The Sewers"
+    ],
+    "requires": "|Progressive Cat| OR |@Slot Unlocks:ALL|"
+  },
+  {
+    "name": "The Sewers Hard Combat 2",
+    "region": "The Sewers",
+    "category": [
+      "The Sewers"
+    ],
+    "requires": "|Progressive Cat| OR |@Slot Unlocks:ALL|"
+  },
+  {
+    "name": "The Sewers Mini Boss",
+    "region": "The Sewers",
+    "category": [
+      "The Sewers"
+    ],
+    "requires": "|Progressive Cat|"
+  },
+  {
+    "name": "The Sewers Boss",
+    "region": "The Sewers",
+    "category": [
+      "The Sewers"
+    ],
+    "requires": "|Progressive Cat:2| OR (|Progressive Cat| AND |@Slot Unlocks:3|)"
+  },
+  {
+    "name": "The Caves Combat 1",
+    "region": "The Caves",
+    "category": [
+      "The Caves"
+    ],
+    "requires": ""
+  },
+  {
+    "name": "The Caves Combat 2",
+    "region": "The Caves",
+    "category": [
+      "The Caves"
+    ],
+    "requires": ""
+  },
+  {
+    "name": "The Caves Combat 3",
+    "region": "The Caves",
+    "category": [
+      "The Caves"
+    ],
+    "requires": ""
+  },
+  {
+    "name": "The Caves Combat 4",
+    "region": "The Caves",
+    "category": [
+      "The Caves"
+    ],
+    "requires": ""
+  },
+  {
+    "name": "The Caves Combat 5",
+    "region": "The Caves",
+    "category": [
+      "The Caves"
+    ],
+    "requires": ""
+  },
+  {
+    "name": "The Caves Hard Combat 1",
+    "region": "The Caves",
+    "category": [
+      "The Caves"
+    ],
+    "requires": "(|Progressive Cat:3| AND |@Slot Unlocks:2|) OR (|Progressive Cat:2| AND |@Slot Unlocks:ALL|)"
+  },
+  {
+    "name": "The Caves Hard Combat 2",
+    "region": "The Caves",
+    "category": [
+      "The Caves"
+    ],
+    "requires": "(|Progressive Cat:3| AND |@Slot Unlocks:2|) OR (|Progressive Cat:2| AND |@Slot Unlocks:ALL|)"
+  },
+  {
+    "name": "The Caves Mini Boss",
+    "region": "The Caves",
+    "category": [
+      "The Caves"
+    ],
+    "requires": "(|Progressive Cat:3| AND |@Slot Unlocks:2|) OR (|Progressive Cat:2| AND |@Slot Unlocks:ALL|)"
+  },
+  {
+    "name": "The Caves Boss",
+    "region": "The Caves",
+    "category": [
+      "The Caves"
+    ],
+    "requires": "(|Progressive Cat:3| AND |@Slot Unlocks:2| AND |Progressive Skill:2|) OR (|Progressive Cat:2| AND |@Slot Unlocks:ALL|  AND |Progressive Skill:3|)",
+    "victory": true
+  },
+  {
+    "name": "1 Round Win",
+    "category": [
+      "Challenges"
+    ],
+    "requires": "(|Progressive Cat:3| AND |@Slot Unlocks:1| AND |Progressive Skill:1|) OR (|Progressive Cat:2| AND |@Slot Unlocks:3|  AND |Progressive Skill:2|) OR (|Progressive Cat| AND |@Slot Unlocks:ALL|  AND |Progressive Skill:4|)"
+  },
+  {
+    "name": "3 Round (Mini-)Boss Win",
+    "category": [
+      "Challenges"
+    ],
+    "requires": "(|Progressive Cat:3| AND |@Slot Unlocks:1| AND |Progressive Skill:1|) OR (|Progressive Cat:2| AND |@Slot Unlocks:3|  AND |Progressive Skill:2|) OR (|Progressive Cat| AND |@Slot Unlocks:ALL|  AND |Progressive Skill:4|)"
+  },
+  {
+    "name": "Strength Event",
+    "category": [
+      "Events"
+    ],
+    "requires": ""
+  },
+  {
+    "name": "Dexterity Event",
+    "category": [
+      "Events"
+    ],
+    "requires": ""
+  },
+  {
+    "name": "Constitution Event",
+    "category": [
+      "Events"
+    ],
+    "requires": ""
+  },
+  {
+    "name": "Intelligence Event",
+    "category": [
+      "Events"
+    ],
+    "requires": ""
+  },
+  {
+    "name": "Speed Event",
+    "category": [
+      "Events"
+    ],
+    "requires": ""
+  },
+  {
+    "name": "Charisma Event",
+    "category": [
+      "Events"
+    ],
+    "requires": ""
+  },
+  {
+    "name": "Luck Event",
+    "category": [
+      "Events"
+    ],
+    "requires": ""
+  }
+]

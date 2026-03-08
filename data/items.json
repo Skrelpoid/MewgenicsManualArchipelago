@@ -1,0 +1,146 @@
+[
+  {
+    "count": 1,
+    "name": "The Sewers Unlock",
+    "category": [
+      "Progression"
+    ],
+    "progression": true
+  },
+  {
+    "count": 1,
+    "name": "The Caves Unlock",
+    "category": [
+      "Progression"
+    ],
+    "progression": true
+  },
+  {
+    "count": "3",
+    "name": "Progressive Cat",
+    "category": [
+      "Progression"
+    ],
+    "progression": true
+  },
+  {
+    "count": 1,
+    "name": "Weapon Slot",
+    "category": [
+      "Item Slots"
+    ],
+    "progression": true
+  },
+  {
+    "count": 1,
+    "name": "Head/Helmet Slot",
+    "category": [
+      "Item Slots"
+    ],
+    "progression": true
+  },
+  {
+    "count": 1,
+    "name": "Neck/Amulet Slot",
+    "category": [
+      "Item Slots"
+    ],
+    "progression": true
+  },
+  {
+    "count": 1,
+    "name": "Face/Eyes/Glasses Slot",
+    "category": [
+      "Item Slots"
+    ],
+    "progression": true
+  },
+  {
+    "count": 1,
+    "name": "Trinket/Consumable Slot",
+    "category": [
+      "Item Slots"
+    ],
+    "progression": true
+  },
+  {
+    "count": "4",
+    "name": "Progressive Skill",
+    "category": [
+      "Progression"
+    ],
+    "progression": true
+  },
+  {
+    "count": "3",
+    "name": "Progressive Stat Total",
+    "category": [
+      "Useful"
+    ],
+    "useful": true
+  },
+  {
+    "count": 1,
+    "name": "Disordered Cats",
+    "category": [
+      "Useful"
+    ],
+    "useful": true
+  },
+  {
+    "count": 1,
+    "name": "Fighter Unlock",
+    "category": [
+      "Progression"
+    ],
+    "progression": true
+  },
+  {
+    "count": 1,
+    "name": "Hunter Unlock",
+    "category": [
+      "Progression"
+    ],
+    "progression": true
+  },
+  {
+    "count": 1,
+    "name": "Mage Unlock",
+    "category": [
+      "Progression"
+    ],
+    "progression": true
+  },
+  {
+    "count": 1,
+    "name": "Tank Unlock",
+    "category": [
+      "Progression"
+    ],
+    "progression": true
+  },
+  {
+    "count": 1,
+    "name": "Cleric Unlock",
+    "category": [
+      "Progression"
+    ],
+    "progression": true
+  },
+  {
+    "count": 1,
+    "name": "Thief Unlock",
+    "category": [
+      "Progression"
+    ],
+    "progression": true
+  },
+  {
+    "count": 1,
+    "name": "Necromancer Unlock",
+    "category": [
+      "Progression"
+    ],
+    "progression": true
+  }
+]

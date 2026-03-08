@@ -1,0 +1,19 @@
+{
+  "The Alley": {
+    "connects_to": [
+      "The Sewers"
+    ],
+    "starting": true,
+    "requires": ""
+  },
+  "The Sewers": {
+    "connects_to": [
+      "The Caves"
+    ],
+    "requires": "|The Sewers Unlock|"
+  },
+  "The Caves": {
+    "connects_to": [],
+    "requires": "|The Caves Unlock| AND (|Progressive Cat:2| OR (|Progressive Cat| AND |@Slot Unlocks:3|))"
+  }
+}

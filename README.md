@@ -1,2 +1,2 @@
 # MewgenicsManualArchipelago
-A Manual Archipelago implementation for Mewgenic
+A Manual Archipelago implementation for Mewgenics
