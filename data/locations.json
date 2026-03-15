@@ -40,6 +40,14 @@
     "requires": ""
   },
   {
+    "name": "The Alley Mini Boss",
+    "region": "The Alley",
+    "category": [
+      "The Alley"
+    ],
+    "requires": ""
+  },
+  {
     "name": "The Alley Hard Combat 1",
     "region": "The Alley",
     "category": [
@@ -49,14 +57,6 @@
   },
   {
     "name": "The Alley Hard Combat 2",
-    "region": "The Alley",
-    "category": [
-      "The Alley"
-    ],
-    "requires": ""
-  },
-  {
-    "name": "The Alley Mini Boss",
     "region": "The Alley",
     "category": [
       "The Alley"
@@ -112,6 +112,14 @@
     "requires": ""
   },
   {
+    "name": "The Sewers Mini Boss",
+    "region": "The Sewers",
+    "category": [
+      "The Sewers"
+    ],
+    "requires": "|Progressive Cat|"
+  },
+  {
     "name": "The Sewers Hard Combat 1",
     "region": "The Sewers",
     "category": [
@@ -126,14 +134,6 @@
       "The Sewers"
     ],
     "requires": "|Progressive Cat| OR |@Item Slots:ALL|"
-  },
-  {
-    "name": "The Sewers Mini Boss",
-    "region": "The Sewers",
-    "category": [
-      "The Sewers"
-    ],
-    "requires": "|Progressive Cat|"
   },
   {
     "name": "The Sewers Boss",
@@ -184,6 +184,14 @@
     "requires": ""
   },
   {
+    "name": "The Caves Mini Boss",
+    "region": "The Caves",
+    "category": [
+      "The Caves"
+    ],
+    "requires": "(|Progressive Cat:3| AND |@Item Slots:2|) OR (|Progressive Cat:2| AND |@Item Slots:ALL|)"
+  },
+  {
     "name": "The Caves Hard Combat 1",
     "region": "The Caves",
     "category": [
@@ -193,14 +201,6 @@
   },
   {
     "name": "The Caves Hard Combat 2",
-    "region": "The Caves",
-    "category": [
-      "The Caves"
-    ],
-    "requires": "(|Progressive Cat:3| AND |@Item Slots:2|) OR (|Progressive Cat:2| AND |@Item Slots:ALL|)"
-  },
-  {
-    "name": "The Caves Mini Boss",
     "region": "The Caves",
     "category": [
       "The Caves"
@@ -221,14 +221,14 @@
     "category": [
       "Challenges"
     ],
-    "requires": "(|Progressive Cat:3| AND |@Item Slots:1| AND |Progressive Skill:1|) OR (|Progressive Cat:2| AND |@Item Slots:3|  AND |Progressive Skill:2|) OR (|Progressive Cat| AND |@Item Slots:ALL|  AND |Progressive Skill:4|)"
+    "requires": "(|Progressive Cat:3| AND |@Item Slots:1| AND |Progressive Skill:1|) OR (|Progressive Cat:2| AND |@Item Slots:3| AND |Progressive Skill:2|) OR (|Progressive Cat| AND |@Item Slots:ALL| AND |Progressive Skill:4|)"
   },
   {
     "name": "3 Round (Mini-)Boss Win",
     "category": [
       "Challenges"
     ],
-    "requires": "(|Progressive Cat:3| AND |@Item Slots:1| AND |Progressive Skill:1|) OR (|Progressive Cat:2| AND |@Item Slots:3|  AND |Progressive Skill:2|) OR (|Progressive Cat| AND |@Item Slots:ALL|  AND |Progressive Skill:4|)"
+    "requires": "(|Progressive Cat:3| AND |@Item Slots:1| AND |Progressive Skill:1|) OR (|Progressive Cat:2| AND |@Item Slots:3| AND |Progressive Skill:2|) OR (|Progressive Cat| AND |@Item Slots:ALL| AND |Progressive Skill:4|)"
   },
   {
     "name": "Strength Event",
