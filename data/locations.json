@@ -45,7 +45,7 @@
     "category": [
       "The Alley"
     ],
-    "requires": ""
+    "requires": "(|@Classes:1|) AND ((|Progressive Skill:2| AND |@Item Slots:1|) OR (|Progressive Cat:1| AND |Progressive Skill:1|) OR (|Progressive Cat:2|))"
   },
   {
     "name": "The Alley Hard Combat 1",
@@ -53,7 +53,7 @@
     "category": [
       "The Alley"
     ],
-    "requires": ""
+    "requires": "(|@Classes:1|) AND ((|Progressive Skill:2| AND |@Item Slots:1|) OR (|Progressive Cat:1| AND |Progressive Skill:1|) OR (|Progressive Cat:2|))"
   },
   {
     "name": "The Alley Hard Combat 2",
@@ -61,7 +61,7 @@
     "category": [
       "The Alley"
     ],
-    "requires": ""
+    "requires": "(|@Classes:1|) AND ((|Progressive Skill:2| AND |@Item Slots:1|) OR (|Progressive Cat:1| AND |Progressive Skill:1|) OR (|Progressive Cat:2|))"
   },
   {
     "name": "The Alley Boss",
@@ -69,7 +69,7 @@
     "category": [
       "The Alley"
     ],
-    "requires": ""
+    "requires": "(|@Classes:1|) AND ((|Progressive Skill:2| AND |@Item Slots:1|) OR (|Progressive Cat:1| AND |Progressive Skill:1|) OR (|Progressive Cat:2|))"
   },
   {
     "name": "The Sewers Combat 1",
@@ -117,7 +117,7 @@
     "category": [
       "The Sewers"
     ],
-    "requires": "|Progressive Cat|"
+    "requires": "(|@Classes:2|) AND ((|Progressive Skill:3| AND |@Item Slots:2|) OR (|Progressive Cat:1| AND |Progressive Skill:2| AND |@Item Slots:1|) OR (|Progressive Cat:2| AND |Progressive Skill:1|) OR (|Progressive Cat:3|))"
   },
   {
     "name": "The Sewers Hard Combat 1",
@@ -125,7 +125,7 @@
     "category": [
       "The Sewers"
     ],
-    "requires": "|Progressive Cat| OR |@Item Slots:ALL|"
+    "requires": "(|@Classes:3|) AND ((|Progressive Skill:3| AND |@Item Slots:3|) OR (|Progressive Cat:1| AND |Progressive Skill:2| AND |@Item Slots:2|) OR (|Progressive Cat:2| AND |Progressive Skill:1| AND |@Item Slots:1|) OR (|Progressive Cat:3|))"
   },
   {
     "name": "The Sewers Hard Combat 2",
@@ -133,7 +133,7 @@
     "category": [
       "The Sewers"
     ],
-    "requires": "|Progressive Cat| OR |@Item Slots:ALL|"
+    "requires": "(|@Classes:3|) AND ((|Progressive Skill:3| AND |@Item Slots:3|) OR (|Progressive Cat:1| AND |Progressive Skill:2| AND |@Item Slots:2|) OR (|Progressive Cat:2| AND |Progressive Skill:1| AND |@Item Slots:1|) OR (|Progressive Cat:3|))"
   },
   {
     "name": "The Sewers Boss",
@@ -141,7 +141,7 @@
     "category": [
       "The Sewers"
     ],
-    "requires": "|Progressive Cat:2| OR (|Progressive Cat| AND |@Item Slots:3|)"
+    "requires": "(|@Classes:3|) AND ((|Progressive Skill:3| AND |@Item Slots:4|) OR (|Progressive Cat:1| AND |Progressive Skill:2| AND |@Item Slots:3|) OR (|Progressive Cat:2| AND |Progressive Skill:1| AND |@Item Slots:2|) OR (|Progressive Cat:3| AND |@Item Slots:1|))"
   },
   {
     "name": "The Caves Combat 1",
@@ -189,7 +189,7 @@
     "category": [
       "The Caves"
     ],
-    "requires": "(|Progressive Cat:3| AND |@Item Slots:2|) OR (|Progressive Cat:2| AND |@Item Slots:ALL|)"
+    "requires": "(|@Classes:4|) AND ((|Progressive Cat:1| AND |Progressive Skill:3| AND |@Item Slots:4|) OR (|Progressive Cat:2| AND |Progressive Skill:3| AND |@Item Slots:3|) OR (|Progressive Cat:3| AND |Progressive Skill:2| AND |@Item Slots:2|))"
   },
   {
     "name": "The Caves Hard Combat 1",
@@ -197,7 +197,7 @@
     "category": [
       "The Caves"
     ],
-    "requires": "(|Progressive Cat:3| AND |@Item Slots:2|) OR (|Progressive Cat:2| AND |@Item Slots:ALL|)"
+    "requires": "(|@Classes:5|) AND ((|Progressive Cat:1| AND |Progressive Skill:4| AND |@Item Slots:5|) OR (|Progressive Cat:2| AND |Progressive Skill:3| AND |@Item Slots:4|) OR (|Progressive Cat:3| AND |Progressive Skill:3| AND |@Item Slots:3|))"
   },
   {
     "name": "The Caves Hard Combat 2",
@@ -205,7 +205,7 @@
     "category": [
       "The Caves"
     ],
-    "requires": "(|Progressive Cat:3| AND |@Item Slots:2|) OR (|Progressive Cat:2| AND |@Item Slots:ALL|)"
+    "requires": "(|@Classes:5|) AND ((|Progressive Cat:1| AND |Progressive Skill:4| AND |@Item Slots:5|) OR (|Progressive Cat:2| AND |Progressive Skill:3| AND |@Item Slots:4|) OR (|Progressive Cat:3| AND |Progressive Skill:3| AND |@Item Slots:3|))"
   },
   {
     "name": "The Caves Boss",
@@ -213,7 +213,7 @@
     "category": [
       "The Caves"
     ],
-    "requires": "(|Progressive Cat:3| AND |@Item Slots:2| AND |Progressive Skill:2|) OR (|Progressive Cat:2| AND |@Item Slots:ALL|  AND |Progressive Skill:3|)",
+    "requires": "(|@Classes:ALL|) AND ((|Progressive Cat:2| AND |Progressive Skill:4| AND |@Item Slots:5|) OR (|Progressive Cat:3| AND |Progressive Skill:4| AND |@Item Slots:4|))",
     "victory": true
   },
   {
