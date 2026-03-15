@@ -91,7 +91,7 @@
     "count": 1,
     "name": "Fighter Unlock",
     "category": [
-      "Progression"
+      "Classes"
     ],
     "progression": true
   },
@@ -99,7 +99,7 @@
     "count": 1,
     "name": "Hunter Unlock",
     "category": [
-      "Progression"
+      "Classes"
     ],
     "progression": true
   },
@@ -107,7 +107,7 @@
     "count": 1,
     "name": "Mage Unlock",
     "category": [
-      "Progression"
+      "Classes"
     ],
     "progression": true
   },
@@ -115,7 +115,7 @@
     "count": 1,
     "name": "Tank Unlock",
     "category": [
-      "Progression"
+      "Classes"
     ],
     "progression": true
   },
@@ -123,7 +123,7 @@
     "count": 1,
     "name": "Cleric Unlock",
     "category": [
-      "Progression"
+      "Classes"
     ],
     "progression": true
   },
@@ -131,7 +131,7 @@
     "count": 1,
     "name": "Thief Unlock",
     "category": [
-      "Progression"
+      "Classes"
     ],
     "progression": true
   },
@@ -139,7 +139,7 @@
     "count": 1,
     "name": "Necromancer Unlock",
     "category": [
-      "Progression"
+      "Classes"
     ],
     "progression": true
   }
