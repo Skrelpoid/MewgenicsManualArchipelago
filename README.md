@@ -9,7 +9,9 @@ Items:
 * 6 Classes, Collarless excluded, maybe also from further acts (Configurable)
 * 5 Item Slots: Weapon, Head, Neck etc...
 * 4 Areas: Sewers, Caves, Junk Yard, Bone Yard
-* 4 Progressive Skills: Can only use Skill of you have this unlocked 
+* 4 Progressive Skills: Can only use x Skill if you have this unlocked
+  - This is meant per Battle: Each battle, you may choose which x Skill(s) you want to use and you may only use those x Skills, where x is the amount of Progressive Skills you have
+  - E.g: If you have 2 Progressive Skills, you may opt to use only Skill 2 and 4 for the first Battle, 1 and 2 for the second battle and 3 and 4 for the Boss.
 
 Filler: Meow (Nothing)
 
