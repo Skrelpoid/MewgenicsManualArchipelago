@@ -1,7 +1,8 @@
 {
   "The Alley": {
     "connects_to": [
-      "The Sewers"
+      "The Sewers",
+      "The Junkyard"
     ],
     "starting": true,
     "requires": ""
@@ -10,10 +11,20 @@
     "connects_to": [
       "The Caves"
     ],
-    "requires": "|The Sewers Unlock|"
+    "requires": "(|The Sewers Unlock| AND |@Classes:1|) AND ((|Progressive Skill:2| AND |@Item Slots:1|) OR (|Progressive Cat:1| AND |Progressive Skill:1|) OR (|Progressive Cat:2|))"
   },
   "The Caves": {
     "connects_to": [],
-    "requires": "|The Caves Unlock| AND (|Progressive Cat:2| OR (|Progressive Cat| AND |@Item Slots:3|))"
+    "requires": "(|The Caves Unlock| AND |@Classes:3|) AND ((|Progressive Skill:3| AND |@Item Slots:4|) OR (|Progressive Cat:1| AND |Progressive Skill:2| AND |@Item Slots:3|) OR (|Progressive Cat:2| AND |Progressive Skill:1| AND |@Item Slots:2|) OR (|Progressive Cat:3| AND |@Item Slots:1|))"
+  },
+  "The Junkyard": {
+    "connects_to": [
+      "The Boneyard"
+    ],
+    "requires": "(|The Junkyard Unlock| AND |@Classes:1|) AND ((|Progressive Skill:2| AND |@Item Slots:1|) OR (|Progressive Cat:1| AND |Progressive Skill:1|) OR (|Progressive Cat:2|))"
+  },
+  "The Boneyard": {
+    "connects_to": [],
+    "requires": "(|The Boneyard Unlock| AND |@Classes:3|) AND ((|Progressive Skill:3| AND |@Item Slots:4|) OR (|Progressive Cat:1| AND |Progressive Skill:2| AND |@Item Slots:3|) OR (|Progressive Cat:2| AND |Progressive Skill:1| AND |@Item Slots:2|) OR (|Progressive Cat:3| AND |@Item Slots:1|))"
   }
 }
