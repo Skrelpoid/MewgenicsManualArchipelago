@@ -16,6 +16,22 @@
     "progression": true
   },
   {
+    "count": 1,
+    "name": "The Junkyard Unlock",
+    "category": [
+      "Progression"
+    ],
+    "progression": true
+  },
+  {
+    "count": 1,
+    "name": "The Boneyard Unlock",
+    "category": [
+      "Progression"
+    ],
+    "progression": true
+  },
+  {
     "count": "3",
     "name": "Progressive Cat",
     "category": [
