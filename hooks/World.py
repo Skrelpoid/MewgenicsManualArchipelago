@@ -70,27 +70,33 @@ def before_create_items_starting(item_pool: list, world: World, multiworld: Mult
 
 # The item pool after starting items are processed but before filler is added, in case you want to see the raw item pool at that stage
 def before_create_items_filler(item_pool: list, world: World, multiworld: MultiWorld, player: int) -> list:
-    # Use this hook to remove items from the item pool
-    itemNamesToRemove: list[str] = [] # List of item names
 
-    # Add your code here to calculate which items to remove.
-    #
-    # Because multiple copies of an item can exist, you need to add an item name
-    # to the list multiple times if you want to remove multiple copies of it.
+    # Map item names to target counts (extend as needed)
+    limits = {
+        "Choose Skill": world.options.choose_skill_amount.value,
+        "Choose Passive": world.options.choose_passive_amount.value,
+        "Obtain Random Uncommon Item": world.options.uncommon_items_amount.value,
+        "Obtain Random Rare Item": world.options.rare_items_amount.value,
+        "Obtain Random Very Rare Item": world.options.very_rare_items_amount.value
+    }
 
-    for itemName in itemNamesToRemove:
-        item = next(i for i in item_pool if i.name == itemName)
-        item_pool.remove(item)
+    others = []
+    trimmed_groups = []
+
+    # Group by name and trim
+    for name, target in limits.items():
+        group = [item for item in item_pool if item.name == name]
+        trimmed = group[:target]
+        trimmed_groups.extend(trimmed)
+
+    # All non-limited items
+    others = [item for item in item_pool
+              if item.name not in limits]
+
+    item_pool = others + trimmed_groups
 
     return item_pool
 
-    # Some other useful hook options:
-
-    ## Place an item at a specific location
-    # location = next(l for l in multiworld.get_unfilled_locations(player=player) if l.name == "Location Name")
-    # item_to_place = next(i for i in item_pool if i.name == "Item Name")
-    # location.place_locked_item(item_to_place)
-    # item_pool.remove(item_to_place)
 
 # The complete item pool prior to being set for generation is provided here, in case you want to make changes to it
 def after_create_items(item_pool: list, world: World, multiworld: MultiWorld, player: int) -> list:

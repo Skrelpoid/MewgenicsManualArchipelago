@@ -1,8 +1,71 @@
-name: Skrelpoid
+name: Player{NUMBER}
 description: Default template created by the Manual Builder tool
 
 game: Manual_Mewgenics_Skrelpoid
 
 Manual_Mewgenics_Skrelpoid:
-    progression_balancing: 50
-    accessibility: items
+  progression_balancing: 50
+  accessibility: items
+
+  # How many Choose Skill items are in the item pool. Min: 0, Default: 4, Max: 10
+  choose_skill_amount:
+    4: 1
+    random: 0
+  
+  # How many Choose Passive items are in the item pool. Min: 0, Default: 4, Max: 10
+  choose_passive_amount:
+    4: 1
+    random: 0
+
+  # How many Obtain Random Uncommon Items are in the item pool. Min: 0, Default: 10, Max: 20
+  uncommon_items_amount:
+    10: 1
+    random: 0
+
+  # How many Obtain Random Rare Items are in the item pool. Min: 0, Default: 5, Max: 10
+  rare_items_amount:
+    5: 1
+    random: 0
+
+  # How many Obtain Random Very Rare Items are in the item pool. Min: 0, Default: 3, Max: 5
+  very_rare_items_amount:
+    3: 1
+    random: 0
+
+  ###########################
+  # Item & Location Options #
+  ###########################
+  local_items:
+    # Forces these items to be in their native world.
+    []
+
+  non_local_items:
+    # Forces these items to be outside their native world.
+    []
+
+  start_inventory:
+    # Start with the specified amount of these items. Example: "Bomb: 1"
+    {}
+
+  start_hints:
+    # Start with these item's locations prefilled into the ``!hint`` command.
+    []
+
+  start_location_hints:
+    # Start with these locations and their item prefilled into the ``!hint`` command.
+    []
+
+  exclude_locations:
+    # Prevent these locations from having an important item.
+    []
+
+  priority_locations:
+    # Prevent these locations from having an unimportant item.
+    []
+
+  item_links:
+    # Share part of your item pool with other players.
+    []
+
+  plando_items:
+    []

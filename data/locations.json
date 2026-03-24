@@ -214,7 +214,7 @@
       "The Caves"
     ],
     "requires": "(|@Classes:ALL|) AND ((|Progressive Cat:2| AND |Progressive Skill:4| AND |@Item Slots:5|) OR (|Progressive Cat:3| AND |Progressive Skill:4| AND |@Item Slots:4|))",
-    "victory": true
+    "place_item": ["Killed The Caves Boss"]
   },
   {
     "name": "The Junkyard Combat 1",
@@ -359,7 +359,7 @@
       "The Boneyard"
     ],
     "requires": "(|@Classes:ALL|) AND ((|Progressive Cat:2| AND |Progressive Skill:4| AND |@Item Slots:5|) OR (|Progressive Cat:3| AND |Progressive Skill:4| AND |@Item Slots:4|))",
-    "victory": true
+    "place_item": ["Killed The Boneyard Boss"]
   },
   {
     "name": "1 Round Win",
@@ -423,5 +423,13 @@
       "Events"
     ],
     "requires": ""
+  },
+  {
+    "name": "Victory",
+    "category": [
+      "Victory"
+    ],
+    "requires": "|Killed The Caves Boss| AND |Killed The Boneyard Boss|",
+    "victory": true
   }
 ]

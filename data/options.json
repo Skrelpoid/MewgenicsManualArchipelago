@@ -2,80 +2,60 @@
     "$schema": "https://raw.githubusercontent.com/ManualForArchipelago/Manual/main/schemas/Manual.options.schema.json",
     "_comment": "Add a _ before an option name to comment it out and it wont be added to the apworld",
     "core": {
-        "goal":{
-            "_comment": [
-                "Using 'goal' as the name of an option let you override some of the generated goal parameters"
-            ],
-            "display_name": "The End Objective",
-            "description": "How to End your Randomized playthrough.",
-            "aliases": {"easiest": 0},
-            "hidden": false
-        },
         "death_link": {
             "default": false
-        },
-        "filler_traps": {
-            "_comment": "Using values here let you set a 'recommended' filler_trap percentage or even a default percentage",
-            "values": {
-                "recommended": 20
-            }
         }
     },
     "user": {
-        "_commented_out_option":{
-            "type": "Toggle",
-            "default": true
-        },
-        "Example_Toggle":{
-            "description": [
-                "This is a Toggle",
-                "A simple boolean, aka True or False set the initial value with \"default\""
-            ],
-            "type": "Toggle",
-            "default": false,
-            "group": "Example Options"
-        },
-        "Example_Choice":{
-            "type": "Choice",
-            "description": [
-                "This is a Choice",
-                "Let the user pick from a list of values",
-                "allow_custom_value let a player define their own text value",
-                "Currently the only use for Choice in Manual outside of hooks is the goal"
-            ],
-            "values": {
-                "start":0,
-                "test":1
-             },
-            "default": 0,
-            "allow_custom_value": false,
-            "group": "Example Options"
-        },
-        "Example_Range":{
+        "choose_skill_amount":{
             "type": "Range",
             "description": [
-                "This is a Range",
-                "Allow the player to specify a value between 'start' and 'end'",
-                "if you include a \"values\" you can define the label for certain values",
-                "Currently the only use for Range in Manual outside of hooks is 'filler_trap'"
+                "How many Choose Skill items are in the item pool. Min: 0, Default: 4, Max: 10"
             ],
             "range_start": 0,
-            "default": 1,
+            "default": 4,
             "range_end": 10,
-            "values": {"example": 2},
-            "group": "Example Options"
+            "group": "Useful Items"
         },
-
-        "DLC_enabled":{
-            "display_name": "DLC Enabled",
-            "description": "Is the Dlc enabled?",
-            "type": "Toggle",
-            "visibility": [
-                "simple_ui",
-                "complex_ui",
-                "template"
+        "choose_passive_amount":{
+            "type": "Range",
+            "description": [
+                "How many Choose Passive items are in the item pool. Min: 0, Default: 4, Max: 10"
             ],
-            "default": true
+            "range_start": 0,
+            "default": 4,
+            "range_end": 10,
+            "group": "Useful Items"
+        },
+        "uncommon_items_amount":{
+            "type": "Range",
+            "description": [
+                "How many Obtain Random Uncommon Items are in the item pool. Min: 0, Default: 10, Max: 20"
+            ],
+            "range_start": 0,
+            "default": 10,
+            "range_end": 20,
+            "group": "Useful Items"
+        },
+        "rare_items_amount":{
+            "type": "Range",
+            "description": [
+                "How many Obtain Random Rare Items are in the item pool. Min: 0, Default: 5, Max: 10"
+            ],
+            "range_start": 0,
+            "default": 5,
+            "range_end": 10,
+            "group": "Useful Items"
+        },
+        "very_rare_items_amount":{
+            "type": "Range",
+            "description": [
+                "How many Obtain Random Very Rare Items are in the item pool. Min: 0, Default: 3, Max: 5"
+            ],
+            "range_start": 0,
+            "default": 3,
+            "range_end": 5,
+            "group": "Useful Items"
         }
     }
 

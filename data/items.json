@@ -3,7 +3,7 @@
     "count": 1,
     "name": "The Sewers Unlock",
     "category": [
-      "Progression"
+      "Regions"
     ],
     "progression": true
   },
@@ -11,7 +11,7 @@
     "count": 1,
     "name": "The Caves Unlock",
     "category": [
-      "Progression"
+      "Regions"
     ],
     "progression": true
   },
@@ -19,7 +19,7 @@
     "count": 1,
     "name": "The Junkyard Unlock",
     "category": [
-      "Progression"
+      "Regions"
     ],
     "progression": true
   },
@@ -27,7 +27,7 @@
     "count": 1,
     "name": "The Boneyard Unlock",
     "category": [
-      "Progression"
+      "Regions"
     ],
     "progression": true
   },
@@ -89,14 +89,6 @@
   },
   {
     "count": 1,
-    "name": "Disordered Cats",
-    "category": [
-      "Useful"
-    ],
-    "useful": true
-  },
-  {
-    "count": 1,
     "name": "Fighter Unlock",
     "category": [
       "Classes"
@@ -150,5 +142,85 @@
       "Classes"
     ],
     "progression": true
+  },
+  {
+    "count": 1,
+    "name": "Killed The Caves Boss",
+    "category": [
+      "Victory"
+    ],
+    "progression": true
+  },
+  {
+    "count": 1,
+    "name": "Killed The Boneyard Boss",
+    "category": [
+      "Victory"
+    ],
+    "progression": true
+  },
+  {
+    "count": 99,
+    "name": "Obtain Random Common Item",
+    "category": [
+      "Filler"
+    ],
+    "filler": true
+  },
+  {
+    "count": 20,
+    "name": "Obtain Random Uncommon Item",
+    "category": [
+      "Useful"
+    ],
+    "useful": true
+  },
+  {
+    "count": 10,
+    "name": "Obtain Random Rare Item",
+    "category": [
+      "Useful"
+    ],
+    "useful": true
+  },
+  {
+    "count": 5,
+    "name": "Obtain Random Very Rare Item",
+    "category": [
+      "Useful"
+    ],
+    "useful": true
+  },
+  {
+    "count": 10,
+    "name": "Choose Skill",
+    "category": [
+      "Useful"
+    ],
+    "useful": true
+  },
+  {
+    "count": 10,
+    "name": "Choose Passive",
+    "category": [
+      "Useful"
+    ],
+    "useful": true
+  },
+  {
+    "count": 99,
+    "name": "Spawn Coin",
+    "category": [
+      "Filler"
+    ],
+    "filler": true
+  },
+  {
+    "count": 99,
+    "name": "Spawn Food",
+    "category": [
+      "Filler"
+    ],
+    "filler": true
   }
 ]
