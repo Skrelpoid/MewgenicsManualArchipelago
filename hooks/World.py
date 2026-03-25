@@ -70,6 +70,13 @@ def after_create_regions(world: World, multiworld: MultiWorld, player: int):
 #       will create 5 items that are the "useful trap" class
 # {"Item Name": {ItemClassification.useful: 5}} <- You can also use the classification directly
 def before_create_items_all(item_config: dict[str, int|dict], world: World, multiworld: MultiWorld, player: int) -> dict[str, int|dict]:
+    item_config.update({
+        "Choose Skill": world.options.choose_skill_amount.value,
+        "Choose Passive": world.options.choose_passive_amount.value,
+        "Obtain Random Uncommon Item": world.options.uncommon_items_amount.value,
+        "Obtain Random Rare Item": world.options.rare_items_amount.value,
+        "Obtain Random Very Rare Item": world.options.very_rare_items_amount.value
+    })
     return item_config
 
 # The item pool before starting items are processed, in case you want to see the raw item pool at that stage
@@ -78,33 +85,7 @@ def before_create_items_starting(item_pool: list, world: World, multiworld: Mult
 
 # The item pool after starting items are processed but before filler is added, in case you want to see the raw item pool at that stage
 def before_create_items_filler(item_pool: list, world: World, multiworld: MultiWorld, player: int) -> list:
-
-    # Map item names to target counts (extend as needed)
-    limits = {
-        "Choose Skill": world.options.choose_skill_amount.value,
-        "Choose Passive": world.options.choose_passive_amount.value,
-        "Obtain Random Uncommon Item": world.options.uncommon_items_amount.value,
-        "Obtain Random Rare Item": world.options.rare_items_amount.value,
-        "Obtain Random Very Rare Item": world.options.very_rare_items_amount.value
-    }
-
-    others = []
-    trimmed_groups = []
-
-    # Group by name and trim
-    for name, target in limits.items():
-        group = [item for item in item_pool if item.name == name]
-        trimmed = group[:target]
-        trimmed_groups.extend(trimmed)
-
-    # All non-limited items
-    others = [item for item in item_pool
-              if item.name not in limits]
-
-    item_pool = others + trimmed_groups
-
     return item_pool
-
 
 # The complete item pool prior to being set for generation is provided here, in case you want to make changes to it
 def after_create_items(item_pool: list, world: World, multiworld: MultiWorld, player: int) -> list:
