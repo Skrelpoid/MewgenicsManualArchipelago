@@ -7,6 +7,24 @@
         }
     },
     "user": {
+        "caves_as_goal":{
+            "type": "Toggle",
+            "default": true,
+            "description": [
+                "If this is on, going to The Caves and defeating The Caves Boss will be part of the goal.",
+                "If you have multiple goals, you need to achieve all of them."
+            ],
+            "group": "Goal"
+        },
+        "boneyard_as_goal":{
+            "type": "Toggle",
+            "default": true,
+            "description": [
+                "If this is on, going to The Boneyard and defeating The Boneyard Boss will be part of the goal.",
+                "If you have multiple goals, you need to achieve all of them."
+            ],
+            "group": "Goal"
+        },
         "choose_skill_amount":{
             "type": "Range",
             "description": [

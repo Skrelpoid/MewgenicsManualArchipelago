@@ -4,40 +4,35 @@
     "region": "The Alley",
     "category": [
       "The Alley"
-    ],
-    "requires": ""
+    ]
   },
   {
     "name": "The Alley Combat 2",
     "region": "The Alley",
     "category": [
       "The Alley"
-    ],
-    "requires": ""
+    ]
   },
   {
     "name": "The Alley Combat 3",
     "region": "The Alley",
     "category": [
       "The Alley"
-    ],
-    "requires": ""
+    ]
   },
   {
     "name": "The Alley Combat 4",
     "region": "The Alley",
     "category": [
       "The Alley"
-    ],
-    "requires": ""
+    ]
   },
   {
     "name": "The Alley Combat 5",
     "region": "The Alley",
     "category": [
       "The Alley"
-    ],
-    "requires": ""
+    ]
   },
   {
     "name": "The Alley Mini Boss",
@@ -75,47 +70,48 @@
     "name": "The Sewers Combat 1",
     "region": "The Sewers",
     "category": [
-      "The Sewers"
-    ],
-    "requires": ""
+      "The Sewers",
+      "CavesPath"
+    ]
   },
   {
     "name": "The Sewers Combat 2",
     "region": "The Sewers",
     "category": [
-      "The Sewers"
-    ],
-    "requires": ""
+      "The Sewers",
+      "CavesPath"
+    ]
   },
   {
     "name": "The Sewers Combat 3",
     "region": "The Sewers",
     "category": [
-      "The Sewers"
-    ],
-    "requires": ""
+      "The Sewers",
+      "CavesPath"
+    ]
   },
   {
     "name": "The Sewers Combat 4",
     "region": "The Sewers",
     "category": [
-      "The Sewers"
-    ],
-    "requires": ""
+      "The Sewers",
+      "CavesPath"
+    ]
   },
   {
     "name": "The Sewers Combat 5",
     "region": "The Sewers",
     "category": [
-      "The Sewers"
-    ],
-    "requires": ""
+      "The Sewers",
+      "CavesPath"
+    ]
   },
   {
     "name": "The Sewers Mini Boss",
     "region": "The Sewers",
     "category": [
-      "The Sewers"
+      "The Sewers",
+      "CavesPath"
     ],
     "requires": "(|@Classes:2|) AND ((|Progressive Skill:3| AND |@Item Slots:2|) OR (|Progressive Cat:1| AND |Progressive Skill:2| AND |@Item Slots:1|) OR (|Progressive Cat:2| AND |Progressive Skill:1|) OR (|Progressive Cat:3|))"
   },
@@ -123,7 +119,8 @@
     "name": "The Sewers Hard Combat 1",
     "region": "The Sewers",
     "category": [
-      "The Sewers"
+      "The Sewers",
+      "CavesPath"
     ],
     "requires": "(|@Classes:3|) AND ((|Progressive Skill:3| AND |@Item Slots:3|) OR (|Progressive Cat:1| AND |Progressive Skill:2| AND |@Item Slots:2|) OR (|Progressive Cat:2| AND |Progressive Skill:1| AND |@Item Slots:1|) OR (|Progressive Cat:3|))"
   },
@@ -131,7 +128,8 @@
     "name": "The Sewers Hard Combat 2",
     "region": "The Sewers",
     "category": [
-      "The Sewers"
+      "The Sewers",
+      "CavesPath"
     ],
     "requires": "(|@Classes:3|) AND ((|Progressive Skill:3| AND |@Item Slots:3|) OR (|Progressive Cat:1| AND |Progressive Skill:2| AND |@Item Slots:2|) OR (|Progressive Cat:2| AND |Progressive Skill:1| AND |@Item Slots:1|) OR (|Progressive Cat:3|))"
   },
@@ -139,7 +137,8 @@
     "name": "The Sewers Boss",
     "region": "The Sewers",
     "category": [
-      "The Sewers"
+      "The Sewers",
+      "CavesPath"
     ],
     "requires": "(|@Classes:3|) AND ((|Progressive Skill:3| AND |@Item Slots:4|) OR (|Progressive Cat:1| AND |Progressive Skill:2| AND |@Item Slots:3|) OR (|Progressive Cat:2| AND |Progressive Skill:1| AND |@Item Slots:2|) OR (|Progressive Cat:3| AND |@Item Slots:1|))"
   },
@@ -147,47 +146,48 @@
     "name": "The Caves Combat 1",
     "region": "The Caves",
     "category": [
-      "The Caves"
-    ],
-    "requires": ""
+      "The Caves",
+      "CavesPath"
+    ]
   },
   {
     "name": "The Caves Combat 2",
     "region": "The Caves",
     "category": [
-      "The Caves"
-    ],
-    "requires": ""
+      "The Caves",
+      "CavesPath"
+    ]
   },
   {
     "name": "The Caves Combat 3",
     "region": "The Caves",
     "category": [
-      "The Caves"
-    ],
-    "requires": ""
+      "The Caves",
+      "CavesPath"
+    ]
   },
   {
     "name": "The Caves Combat 4",
     "region": "The Caves",
     "category": [
-      "The Caves"
-    ],
-    "requires": ""
+      "The Caves",
+      "CavesPath"
+    ]
   },
   {
     "name": "The Caves Combat 5",
     "region": "The Caves",
     "category": [
-      "The Caves"
-    ],
-    "requires": ""
+      "The Caves",
+      "CavesPath"
+    ]
   },
   {
     "name": "The Caves Mini Boss",
     "region": "The Caves",
     "category": [
-      "The Caves"
+      "The Caves",
+      "CavesPath"
     ],
     "requires": "(|@Classes:4|) AND ((|Progressive Cat:1| AND |Progressive Skill:3| AND |@Item Slots:4|) OR (|Progressive Cat:2| AND |Progressive Skill:3| AND |@Item Slots:3|) OR (|Progressive Cat:3| AND |Progressive Skill:2| AND |@Item Slots:2|))"
   },
@@ -195,7 +195,8 @@
     "name": "The Caves Hard Combat 1",
     "region": "The Caves",
     "category": [
-      "The Caves"
+      "The Caves",
+      "CavesPath"
     ],
     "requires": "(|@Classes:5|) AND ((|Progressive Cat:1| AND |Progressive Skill:4| AND |@Item Slots:5|) OR (|Progressive Cat:2| AND |Progressive Skill:3| AND |@Item Slots:4|) OR (|Progressive Cat:3| AND |Progressive Skill:3| AND |@Item Slots:3|))"
   },
@@ -203,7 +204,8 @@
     "name": "The Caves Hard Combat 2",
     "region": "The Caves",
     "category": [
-      "The Caves"
+      "The Caves",
+      "CavesPath"
     ],
     "requires": "(|@Classes:5|) AND ((|Progressive Cat:1| AND |Progressive Skill:4| AND |@Item Slots:5|) OR (|Progressive Cat:2| AND |Progressive Skill:3| AND |@Item Slots:4|) OR (|Progressive Cat:3| AND |Progressive Skill:3| AND |@Item Slots:3|))"
   },
@@ -211,56 +213,58 @@
     "name": "The Caves Boss",
     "region": "The Caves",
     "category": [
-      "The Caves"
+      "The Caves",
+      "CavesPath"
     ],
     "requires": "(|@Classes:ALL|) AND ((|Progressive Cat:2| AND |Progressive Skill:4| AND |@Item Slots:5|) OR (|Progressive Cat:3| AND |Progressive Skill:4| AND |@Item Slots:4|))",
-    "place_item": ["Killed The Caves Boss"]
+    "place_item": ["Goal Progression"]
   },
   {
     "name": "The Junkyard Combat 1",
     "region": "The Junkyard",
     "category": [
-      "The Junkyard"
-    ],
-    "requires": ""
+      "The Junkyard",
+      "BoneyardPath"
+    ]
   },
   {
     "name": "The Junkyard Combat 2",
     "region": "The Junkyard",
     "category": [
-      "The Junkyard"
-    ],
-    "requires": ""
+      "The Junkyard",
+      "BoneyardPath"
+    ]
   },
   {
     "name": "The Junkyard Combat 3",
     "region": "The Junkyard",
     "category": [
-      "The Junkyard"
-    ],
-    "requires": ""
+      "The Junkyard",
+      "BoneyardPath"
+    ]
   },
   {
     "name": "The Junkyard Combat 4",
     "region": "The Junkyard",
     "category": [
-      "The Junkyard"
-    ],
-    "requires": ""
+      "The Junkyard",
+      "BoneyardPath"
+    ]
   },
   {
     "name": "The Junkyard Combat 5",
     "region": "The Junkyard",
     "category": [
-      "The Junkyard"
-    ],
-    "requires": ""
+      "The Junkyard",
+      "BoneyardPath"
+    ]
   },
   {
     "name": "The Junkyard Mini Boss",
     "region": "The Junkyard",
     "category": [
-      "The Junkyard"
+      "The Junkyard",
+      "BoneyardPath"
     ],
     "requires": "(|@Classes:2|) AND ((|Progressive Skill:3| AND |@Item Slots:2|) OR (|Progressive Cat:1| AND |Progressive Skill:2| AND |@Item Slots:1|) OR (|Progressive Cat:2| AND |Progressive Skill:1|) OR (|Progressive Cat:3|))"
   },
@@ -268,7 +272,8 @@
     "name": "The Junkyard Hard Combat 1",
     "region": "The Junkyard",
     "category": [
-      "The Junkyard"
+      "The Junkyard",
+      "BoneyardPath"
     ],
     "requires": "(|@Classes:3|) AND ((|Progressive Skill:3| AND |@Item Slots:3|) OR (|Progressive Cat:1| AND |Progressive Skill:2| AND |@Item Slots:2|) OR (|Progressive Cat:2| AND |Progressive Skill:1| AND |@Item Slots:1|) OR (|Progressive Cat:3|))"
   },
@@ -276,7 +281,8 @@
     "name": "The Junkyard Hard Combat 2",
     "region": "The Junkyard",
     "category": [
-      "The Junkyard"
+      "The Junkyard",
+      "BoneyardPath"
     ],
     "requires": "(|@Classes:3|) AND ((|Progressive Skill:3| AND |@Item Slots:3|) OR (|Progressive Cat:1| AND |Progressive Skill:2| AND |@Item Slots:2|) OR (|Progressive Cat:2| AND |Progressive Skill:1| AND |@Item Slots:1|) OR (|Progressive Cat:3|))"
   },
@@ -284,7 +290,8 @@
     "name": "The Junkyard Boss",
     "region": "The Junkyard",
     "category": [
-      "The Junkyard"
+      "The Junkyard",
+      "BoneyardPath"
     ],
     "requires": "(|@Classes:3|) AND ((|Progressive Skill:3| AND |@Item Slots:4|) OR (|Progressive Cat:1| AND |Progressive Skill:2| AND |@Item Slots:3|) OR (|Progressive Cat:2| AND |Progressive Skill:1| AND |@Item Slots:2|) OR (|Progressive Cat:3| AND |@Item Slots:1|))"
   },
@@ -292,47 +299,48 @@
     "name": "The Boneyard Combat 1",
     "region": "The Boneyard",
     "category": [
-      "The Boneyard"
-    ],
-    "requires": ""
+      "The Boneyard",
+      "BoneyardPath"
+    ]
   },
   {
     "name": "The Boneyard Combat 2",
     "region": "The Boneyard",
     "category": [
-      "The Boneyard"
-    ],
-    "requires": ""
+      "The Boneyard",
+      "BoneyardPath"
+    ]
   },
   {
     "name": "The Boneyard Combat 3",
     "region": "The Boneyard",
     "category": [
-      "The Boneyard"
-    ],
-    "requires": ""
+      "The Boneyard",
+      "BoneyardPath"
+    ]
   },
   {
     "name": "The Boneyard Combat 4",
     "region": "The Boneyard",
     "category": [
-      "The Boneyard"
-    ],
-    "requires": ""
+      "The Boneyard",
+      "BoneyardPath"
+    ]
   },
   {
     "name": "The Boneyard Combat 5",
     "region": "The Boneyard",
     "category": [
-      "The Boneyard"
-    ],
-    "requires": ""
+      "The Boneyard",
+      "BoneyardPath"
+    ]
   },
   {
     "name": "The Boneyard Mini Boss",
     "region": "The Boneyard",
     "category": [
-      "The Boneyard"
+      "The Boneyard",
+      "BoneyardPath"
     ],
     "requires": "(|@Classes:4|) AND ((|Progressive Cat:1| AND |Progressive Skill:3| AND |@Item Slots:4|) OR (|Progressive Cat:2| AND |Progressive Skill:3| AND |@Item Slots:3|) OR (|Progressive Cat:3| AND |Progressive Skill:2| AND |@Item Slots:2|))"
   },
@@ -340,7 +348,8 @@
     "name": "The Boneyard Hard Combat 1",
     "region": "The Boneyard",
     "category": [
-      "The Boneyard"
+      "The Boneyard",
+      "BoneyardPath"
     ],
     "requires": "(|@Classes:5|) AND ((|Progressive Cat:1| AND |Progressive Skill:4| AND |@Item Slots:5|) OR (|Progressive Cat:2| AND |Progressive Skill:3| AND |@Item Slots:4|) OR (|Progressive Cat:3| AND |Progressive Skill:3| AND |@Item Slots:3|))"
   },
@@ -348,7 +357,8 @@
     "name": "The Boneyard Hard Combat 2",
     "region": "The Boneyard",
     "category": [
-      "The Boneyard"
+      "The Boneyard",
+      "BoneyardPath"
     ],
     "requires": "(|@Classes:5|) AND ((|Progressive Cat:1| AND |Progressive Skill:4| AND |@Item Slots:5|) OR (|Progressive Cat:2| AND |Progressive Skill:3| AND |@Item Slots:4|) OR (|Progressive Cat:3| AND |Progressive Skill:3| AND |@Item Slots:3|))"
   },
@@ -356,10 +366,11 @@
     "name": "The Boneyard Boss",
     "region": "The Boneyard",
     "category": [
-      "The Boneyard"
+      "The Boneyard",
+      "BoneyardPath"
     ],
     "requires": "(|@Classes:ALL|) AND ((|Progressive Cat:2| AND |Progressive Skill:4| AND |@Item Slots:5|) OR (|Progressive Cat:3| AND |Progressive Skill:4| AND |@Item Slots:4|))",
-    "place_item": ["Killed The Boneyard Boss"]
+    "place_item": ["Goal Progression"]
   },
   {
     "name": "1 Round Win",
@@ -429,7 +440,7 @@
     "category": [
       "Victory"
     ],
-    "requires": "|Killed The Caves Boss| AND |Killed The Boneyard Boss|",
+    "requires": "|@Victory:ALL|",
     "victory": true
   }
 ]

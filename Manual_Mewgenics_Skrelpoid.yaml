@@ -7,6 +7,18 @@ Manual_Mewgenics_Skrelpoid:
   progression_balancing: 50
   accessibility: items
 
+  # If this is on, going to The Caves and defeating The Caves Boss will be part of the goal. 
+  # If you have multiple goals, you need to achieve all of them.
+  caves_as_goal:
+    true: 1
+    false: 0
+
+  # If this is on, going to The Boneyard and defeating The Boneyard Boss will be part of the goal. 
+  # If you have multiple goals, you need to achieve all of them.
+  boneyard_as_goal:
+    true: 1
+    false: 0
+
   # How many Choose Skill items are in the item pool. Min: 0, Default: 4, Max: 10
   choose_skill_amount:
     4: 1

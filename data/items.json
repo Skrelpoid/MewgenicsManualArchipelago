@@ -3,7 +3,8 @@
     "count": 1,
     "name": "The Sewers Unlock",
     "category": [
-      "Regions"
+      "Regions",
+      "CavesPath"
     ],
     "progression": true
   },
@@ -11,7 +12,8 @@
     "count": 1,
     "name": "The Caves Unlock",
     "category": [
-      "Regions"
+      "Regions",
+      "CavesPath"
     ],
     "progression": true
   },
@@ -19,7 +21,8 @@
     "count": 1,
     "name": "The Junkyard Unlock",
     "category": [
-      "Regions"
+      "Regions",
+      "BoneyardPath"
     ],
     "progression": true
   },
@@ -27,7 +30,8 @@
     "count": 1,
     "name": "The Boneyard Unlock",
     "category": [
-      "Regions"
+      "Regions",
+      "BoneyardPath"
     ],
     "progression": true
   },
@@ -144,16 +148,8 @@
     "progression": true
   },
   {
-    "count": 1,
-    "name": "Killed The Caves Boss",
-    "category": [
-      "Victory"
-    ],
-    "progression": true
-  },
-  {
-    "count": 1,
-    "name": "Killed The Boneyard Boss",
+    "count": 2,
+    "name": "Goal Progression",
     "category": [
       "Victory"
     ],

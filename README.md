@@ -91,3 +91,31 @@ Which checks to send:
   - Each time you win a Boss or Mini Boss Combat in or before Turn 3, send one of these checks
 * "Stat Event X", e.g. Strength Event 2
   - Each time you choose this stat in an event, send one of these checks
+
+
+With Debug Console:
+Windows %Appdata%/Glaiel Games/Mewgenics/*
+settings.txt
+enable_debugconsole true
+
+In A Run: Press Tilde Key (~ below ESC)
+
+If this does not work you might have to install an English (US) Keyboard Layout
+
+Items:
+On Map:
+* Common Items (ObtainRandomItems common <amount>) 
+* Uncommon Items (ObtainRandomItems uncommon <amount>)
+* Rare Items (ObtainRandomItems rare <amount>)
+* Very Rare Random Item (ObtainRandomItems very_rare <amount>)
+In fight:
+* 0-10 (4) Choose Passive: (bind_passive <Passive>)
+  - You may choose which passive, from any of your unlocked classes (might list them somewhere, copied from wiki)
+  - With the debug console, you can have more than 2 passives (up to 7 according to the wiki)
+  - You may choose an unupgraded passive for the cost of 1 of this item, or an upgraded passive for the cost of 2
+  - When testing, this only lasted for the combat
+* 0-10 (4) Choose Skill: (bind <Skill>)
+  - You may choose which skill, from any of your unlocked classes (might list them somewhere, copied from wiki)
+  - WARNING: You can only have 4 Skills at the same time. Doing equip on a Cat with 4 skills replaces the first skill!
+  - You may choose an unupgraded Skill for the cost of 1 of this item, or an upgraded Skill for the cost of 2 
+Filler spawn Coin/Food

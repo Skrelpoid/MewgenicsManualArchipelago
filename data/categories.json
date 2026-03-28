@@ -1,1 +1,17 @@
-{}
+{
+    "Useful": {},
+    "Filler": {},
+    "Victory": {},
+    "Classes": {},
+    "Progression": {},
+    "Item Slots": {},
+    "Regions": {},
+    "CavesPath": {
+        "hidden": true,
+        "yaml_option": ["caves_as_goal"]
+    },
+    "BoneyardPath": {
+        "hidden": true,
+        "yaml_option": ["boneyard_as_goal"]
+    }
+}
