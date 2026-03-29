@@ -23,10 +23,10 @@ Locations:
 * Events: Use of specific Stats / Run (No Stat used)
 * Achieve a 1 Round win
 * Achieve a 3 Round win against a Boss
-* ? Revive a Cat
-* ? Have 2/4/6 familiars/charmed at the same time
+* ? Revive a body
+* ? Have 2/3/4 familiars/charmed at the same time
 * ? Deal 15/20/25 damage in a single hit
-* ? 3/4/5 Crits in a single combat
+* ? Do 3/4/5 Crits in a single combat
 * ? Heal 10/15/20 hp in a single combat (excludes auto heal at end of combat)
 * ? Pick up 3/4/5 items from the ground in a single combat
 * ? Stack 2/3/4 different debuffs on a single enemy
@@ -93,9 +93,11 @@ Which checks to send:
   - Each time you choose this stat in an event, send one of these checks
 
 
-With Debug Console:
-Windows %Appdata%/Glaiel Games/Mewgenics/*
+## With Debug Console
+Windows: %Appdata%/Glaiel Games/Mewgenics/*
+
 settings.txt
+
 enable_debugconsole true
 
 In A Run: Press Tilde Key (~ below ESC)
@@ -103,19 +105,21 @@ In A Run: Press Tilde Key (~ below ESC)
 If this does not work you might have to install an English (US) Keyboard Layout
 
 Items:
+
 On Map:
-* Common Items (ObtainRandomItems common <amount>) 
-* Uncommon Items (ObtainRandomItems uncommon <amount>)
-* Rare Items (ObtainRandomItems rare <amount>)
-* Very Rare Random Item (ObtainRandomItems very_rare <amount>)
-In fight:
-* 0-10 (4) Choose Passive: (bind_passive <Passive>)
+* Common Items `ObtainRandomItems common <amount>`
+* Uncommon Items `ObtainRandomItems uncommon <amount>`
+* Rare Items `ObtainRandomItems rare <amount>`
+* Very Rare Random Item `ObtainRandomItems very_rare <amount>`
+
+In Fight:
+* 0-10 (4) Choose Passive for a single combat: `bind_passive <Passive>`
   - You may choose which passive, from any of your unlocked classes (might list them somewhere, copied from wiki)
   - With the debug console, you can have more than 2 passives (up to 7 according to the wiki)
   - You may choose an unupgraded passive for the cost of 1 of this item, or an upgraded passive for the cost of 2
-  - When testing, this only lasted for the combat
-* 0-10 (4) Choose Skill: (bind <Skill>)
+  -  When testing, this only lasted for the combat
+* 0-10 (4) Choose Skill: `bind <Skill>`
   - You may choose which skill, from any of your unlocked classes (might list them somewhere, copied from wiki)
   - WARNING: You can only have 4 Skills at the same time. Doing equip on a Cat with 4 skills replaces the first skill!
   - You may choose an unupgraded Skill for the cost of 1 of this item, or an upgraded Skill for the cost of 2 
-Filler spawn Coin/Food
+* Filler `spawn Coin`/`spawn Food`

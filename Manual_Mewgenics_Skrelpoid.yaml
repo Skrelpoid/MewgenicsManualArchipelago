@@ -19,12 +19,17 @@ Manual_Mewgenics_Skrelpoid:
     true: 1
     false: 0
 
+  # Adds 25 challenges as locations, like e.g. Kill 2 Birds, Win in 1 Round, Revive a body
+  challenge_locations:
+    true: 1
+    false: 0
+
   # How many Choose Skill items are in the item pool. Min: 0, Default: 4, Max: 10
   choose_skill_amount:
     4: 1
     random: 0
   
-  # How many Choose Passive items are in the item pool. Min: 0, Default: 4, Max: 10
+  # How many Choose Passive for a single combat items are in the item pool. Min: 0, Default: 4, Max: 10
   choose_passive_amount:
     4: 1
     random: 0

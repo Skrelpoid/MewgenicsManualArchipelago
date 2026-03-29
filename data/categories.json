@@ -13,5 +13,8 @@
     "BoneyardPath": {
         "hidden": true,
         "yaml_option": ["boneyard_as_goal"]
+    },
+    "Challenges": {
+        "yaml_option": ["challenge_locations"]
     }
 }

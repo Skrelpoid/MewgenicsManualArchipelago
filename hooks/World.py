@@ -77,13 +77,13 @@ def before_create_items_all(item_config: dict[str, int|dict], world: World, mult
         goalAmount = goalAmount + 1
 
     if goalAmount == 0:
-        logging.error("No goal chosen. Generation will fail")
+        logging.error("No goal chosen. Generation will fail. TODO: fallback to e.g. Alley")
         raise Exception("No goal chosen. Set at least one of these to true: caves_as_goal, boneyard_as_goal")
 
     item_config.update({
         "Goal Progression": goalAmount,
         "Choose Skill": world.options.choose_skill_amount.value,
-        "Choose Passive": world.options.choose_passive_amount.value,
+        "Choose Passive for a single combat": world.options.choose_passive_amount.value,
         "Obtain Random Uncommon Item": world.options.uncommon_items_amount.value,
         "Obtain Random Rare Item": world.options.rare_items_amount.value,
         "Obtain Random Very Rare Item": world.options.very_rare_items_amount.value

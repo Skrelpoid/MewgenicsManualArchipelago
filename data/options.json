@@ -25,6 +25,14 @@
             ],
             "group": "Goal"
         },
+        "challenge_locations":{
+            "type": "Toggle",
+            "default": true,
+            "description": [
+                "Adds 25 challenges as locations, like e.g. Kill 2 Birds, Win in 1 Round, Revive a body"
+            ],
+            "group": "Locations"
+        },
         "choose_skill_amount":{
             "type": "Range",
             "description": [
@@ -38,7 +46,7 @@
         "choose_passive_amount":{
             "type": "Range",
             "description": [
-                "How many Choose Passive items are in the item pool. Min: 0, Default: 4, Max: 10"
+                "How many Choose Passive for a single combat items are in the item pool. Min: 0, Default: 4, Max: 10"
             ],
             "range_start": 0,
             "default": 4,

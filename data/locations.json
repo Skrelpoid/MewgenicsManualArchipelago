@@ -387,6 +387,157 @@
     "requires": "(|Progressive Cat:3| AND |@Item Slots:1| AND |Progressive Skill:1|) OR (|Progressive Cat:2| AND |@Item Slots:3| AND |Progressive Skill:2|) OR (|Progressive Cat| AND |@Item Slots:ALL| AND |Progressive Skill:4|)"
   },
   {
+    "name": "Kill a Bird 1",
+    "category": [
+      "Challenges"
+    ]
+  },
+  {
+    "name": "Kill a Bird 2",
+    "category": [
+      "Challenges"
+    ]
+  },
+  {
+    "name": "Kill a Bird 3",
+    "category": [
+      "Challenges"
+    ]
+  },
+  {
+    "name": "Revive a body",
+    "category": [
+      "Challenges"
+    ],
+    "requires": "|Cleric Unlock| OR |Necromancer Unlock|"
+  },
+  {
+    "name": "Have 2 familiars / charmed at the same time",
+    "category": [
+      "Challenges"
+    ],
+    "requires": "|Hunter Unlock|"
+  },
+  {
+    "name": "Have 3 familiars / charmed at the same time",
+    "category": [
+      "Challenges"
+    ],
+    "requires": "|Hunter Unlock|"
+  },
+  {
+    "name": "Have 4 familiars / charmed at the same time",
+    "category": [
+      "Challenges"
+    ],
+    "requires": "|Hunter Unlock|"
+  },
+  {
+    "name": "Deal 15 damage in a single hit",
+    "category": [
+      "Challenges"
+    ],
+    "requires": "|Fighter Unlock|"
+  },
+  {
+    "name": "Deal 20 damage in a single hit",
+    "category": [
+      "Challenges"
+    ],
+    "requires": "|Fighter Unlock|"
+  },
+  {
+    "name": "Deal 25 damage in a single hit",
+    "category": [
+      "Challenges"
+    ],
+    "requires": "|Fighter Unlock|"
+  },
+  {
+    "name": "Do 3 crits in a single combat",
+    "category": [
+      "Challenges"
+    ],
+    "requires": "|Hunter Unlock| OR |Thief Unlock|"
+  },
+  {
+    "name": "Do 4 crits in a single combat",
+    "category": [
+      "Challenges"
+    ],
+    "requires": "|Hunter Unlock| OR |Thief Unlock|"
+  },
+  {
+    "name": "Do 5 crits in a single combat",
+    "category": [
+      "Challenges"
+    ],
+    "requires": "|Hunter Unlock| OR |Thief Unlock|"
+  },
+  {
+    "name": "Heal 10 hp in a single combat",
+    "category": [
+      "Challenges"
+    ],
+    "requires": "|Cleric Unlock|"
+  },
+  {
+    "name": "Heal 15 hp in a single combat",
+    "category": [
+      "Challenges"
+    ],
+    "requires": "|Cleric Unlock|"
+  },
+  {
+    "name": "Heal 20 hp in a single combat",
+    "category": [
+      "Challenges"
+    ],
+    "requires": "|Cleric Unlock|"
+  },
+  {
+    "name": "Pick up 3 items from the ground in a single combat",
+    "category": [
+      "Challenges"
+    ],
+    "requires": "|Progressive Cat|"
+  },
+  {
+    "name": "Pick up 4 items from the ground in a single combat",
+    "category": [
+      "Challenges"
+    ],
+    "requires": "|Progressive Cat|"
+  },
+  {
+    "name": "Pick up 5 items from the ground in a single combat",
+    "category": [
+      "Challenges"
+    ],
+    "requires": "|Progressive Cat:2|"
+  },
+  {
+    "name": "Stack 2 different debuffs on a single enemy",
+    "category": [
+      "Challenges"
+    ],
+    "requires": "|Mage Unlock| OR |Hunter Unlock| OR |Thief Unlock|"
+  },
+  {
+    "name": "Stack 3 different debuffs on a single enemy",
+    "category": [
+      "Challenges"
+    ],
+    "requires": "|Progressive Cat| AND (|Mage Unlock| OR |Hunter Unlock| OR |Thief Unlock|)"
+  },
+  {
+    "name": "Stack 4 different debuffs on a single enemy",
+    "category": [
+      "Challenges"
+    ],
+    "requires": "|Progressive Cat| AND (|Mage Unlock| OR |Hunter Unlock| OR |Thief Unlock|)"
+  },
+  {
     "name": "Strength Event",
     "category": [
       "Events"
