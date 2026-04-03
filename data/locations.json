@@ -409,70 +409,70 @@
     "category": [
       "Challenges"
     ],
-    "requires": "|Cleric Unlock| OR |Necromancer Unlock|"
+    "requires": "(|Cleric Unlock| OR |Necromancer Unlock|) AND |Progressive Skill|"
   },
   {
     "name": "Have 2 familiars / charmed at the same time",
     "category": [
       "Challenges"
     ],
-    "requires": "|Hunter Unlock|"
+    "requires": "|Hunter Unlock| AND |Progressive Skill|"
   },
   {
     "name": "Have 3 familiars / charmed at the same time",
     "category": [
       "Challenges"
     ],
-    "requires": "|Hunter Unlock|"
+    "requires": "|Hunter Unlock| AND |Progressive Skill|"
   },
   {
     "name": "Have 4 familiars / charmed at the same time",
     "category": [
       "Challenges"
     ],
-    "requires": "|Hunter Unlock|"
+    "requires": "|Hunter Unlock| AND (|Progressive Skill:2| OR (|Progressive Skill:1| AND |@Item Slots:1|))"
   },
   {
     "name": "Deal 15 damage in a single hit",
     "category": [
       "Challenges"
     ],
-    "requires": "|Fighter Unlock|"
+    "requires": "|Fighter Unlock| AND |Weapon Slot|"
   },
   {
     "name": "Deal 20 damage in a single hit",
     "category": [
       "Challenges"
     ],
-    "requires": "|Fighter Unlock|"
+    "requires": "|Fighter Unlock| AND |Weapon Slot| AND |Progressive Skill|"
   },
   {
     "name": "Deal 25 damage in a single hit",
     "category": [
       "Challenges"
     ],
-    "requires": "|Fighter Unlock|"
+    "requires": "|Fighter Unlock| AND |Weapon Slot| AND |Progressive Skill|"
   },
   {
     "name": "Do 3 crits in a single combat",
     "category": [
       "Challenges"
     ],
-    "requires": "|Hunter Unlock| OR |Thief Unlock|"
+    "requires": "(|Hunter Unlock| OR |Thief Unlock|) AND |Progressive Skill|"
   },
   {
     "name": "Do 4 crits in a single combat",
     "category": [
       "Challenges"
     ],
-    "requires": "|Hunter Unlock| OR |Thief Unlock|"
+    "requires": "(|Hunter Unlock| OR |Thief Unlock|) AND |Progressive Skill|"
   },
   {
     "name": "Do 5 crits in a single combat",
     "category": [
       "Challenges"
     ],
-    "requires": "|Hunter Unlock| OR |Thief Unlock|"
+    "requires": "(|Hunter Unlock| OR |Thief Unlock|) AND |Progressive Skill|"
   },
   {
     "name": "Heal 10 hp in a single combat",
@@ -486,14 +486,14 @@
     "category": [
       "Challenges"
     ],
-    "requires": "|Cleric Unlock|"
+    "requires": "|Cleric Unlock| AND |Progressive Skill|"
   },
   {
     "name": "Heal 20 hp in a single combat",
     "category": [
       "Challenges"
     ],
-    "requires": "|Cleric Unlock|"
+    "requires": "|Cleric Unlock| AND |Progressive Skill|"
   },
   {
     "name": "Pick up 3 items from the ground in a single combat",
@@ -507,35 +507,35 @@
     "category": [
       "Challenges"
     ],
-    "requires": "|Progressive Cat|"
+    "requires": "|Progressive Cat| AND (|Progressive Skill| OR |@Item Slots:1|)"
   },
   {
     "name": "Pick up 5 items from the ground in a single combat",
     "category": [
       "Challenges"
     ],
-    "requires": "|Progressive Cat:2|"
+    "requires": "|Progressive Cat:2| AND (|Progressive Skill| OR |@Item Slots:1|)"
   },
   {
     "name": "Stack 2 different debuffs on a single enemy",
     "category": [
       "Challenges"
     ],
-    "requires": "|Mage Unlock| OR |Hunter Unlock| OR |Thief Unlock|"
+    "requires": "(|Mage Unlock| OR |Hunter Unlock| OR |Thief Unlock|) AND (|Progressive Skill| OR |@Item Slots:1|)"
   },
   {
     "name": "Stack 3 different debuffs on a single enemy",
     "category": [
       "Challenges"
     ],
-    "requires": "|Progressive Cat| AND (|Mage Unlock| OR |Hunter Unlock| OR |Thief Unlock|)"
+    "requires": "|Progressive Cat| AND (|Mage Unlock| OR |Hunter Unlock| OR |Thief Unlock|) AND (|Progressive Skill| OR |@Item Slots:1|)"
   },
   {
     "name": "Stack 4 different debuffs on a single enemy",
     "category": [
       "Challenges"
     ],
-    "requires": "|Progressive Cat| AND (|Mage Unlock| OR |Hunter Unlock| OR |Thief Unlock|)"
+    "requires": "|Progressive Cat| AND |Thief Unlock| AND (|Mage Unlock| OR |Hunter Unlock|) AND (|Progressive Skill:2| OR |@Item Slots:1|)"
   },
   {
     "name": "Strength Event",

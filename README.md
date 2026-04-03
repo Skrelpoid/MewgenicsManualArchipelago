@@ -51,9 +51,6 @@ This manual is mainly focused on Act 1 and not including progression I haven't g
 
 This manual is (for now) intended to be only an honor system manual. Everything can be done in an unmodded Mewgenics game with a save file that has the areas unlocked that you define in the yaml. Default this means Up to caves and boneyard, excluding Throbbing Domain.
 
-This also means you will NOT need the debug console / save editing / other complicated stuff.
-
-You can just play normal Mewgenics with self imposed restrictions and external progression.
 
 Since mewgenics is already very random I decided that I want the randomization in this to be restrictions that could make archipelago runs feel different. This is why you have restricted classes / how many cats you can take / which item slots you can fill
 
@@ -67,7 +64,7 @@ Which classes do you have unlocked? You can define which classes you have want t
 When choosing items for your cats, take into account which slots you have unlocked. You may take any items from your home, even if you don't have the slots unlocked yet, but you need to unequip them before the first battle. (You might wanna do this if you know that you will get an item slot unlocked during the run). The only exception is that you should not take cursed / items that you cannot unequip into slots you have not unlocked yet.
 If you get a slot unlocked during a run, you may equip items into it.
 
-If you are forced to equip a cursed item / parasite through an event, you're in luck, even if you don't have the slot unlocked, you may use the effects of that item .
+If you are forced to equip a cursed item / parasite through an event, you're in luck, even if you don't have the slot unlocked, you may use the effects of that item.
 
 You may only go to areas you have unlocked. In the beginning this is only The Alley.
 
