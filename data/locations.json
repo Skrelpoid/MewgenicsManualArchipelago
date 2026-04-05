@@ -633,7 +633,7 @@
     "category": [
       "Victory"
     ],
-    "requires": "|@Victory:ALL|",
+    "requires": "{OptionCount(Goal Progression, goal_amount)}",
     "victory": true
   }
 ]

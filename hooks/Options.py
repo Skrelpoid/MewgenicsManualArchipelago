@@ -29,9 +29,25 @@ class Goals(OptionSet):
     valid_keys = location_name_groups["GoalOption"]
     default = frozenset(valid_keys)
 
+class GoalAmount(NamedRange):
+    """
+    How many of the Goals defined above you need to win the game. (0 == All)
+    """
+    from ..Locations import location_name_groups
+    valid_keys = location_name_groups["GoalOption"]
+    display_name = "Goal Amount"
+    range_start = 0
+    range_end = len(valid_keys)
+    default = 0
+    special_range_names = {
+        "all": 0,
+        "single": 1
+    }
+
 # This is called before any manual options are defined, in case you want to define your own with a clean slate or let Manual define over them
 def before_options_defined(options: dict[str, Type[Option[Any]]]) -> dict[str, Type[Option[Any]]]:
     options["goals"] = Goals
+    options["goal_amount"] = GoalAmount
     return options
 
 

@@ -10,6 +10,9 @@ def before_is_category_enabled(multiworld: MultiWorld, player: int, category_nam
         # This category is the name of a GoalOpion
         from ..Helpers import get_option_value
         chosen_goals = get_option_value(multiworld, player, "goals")
+        # Fallback if User chooses no Goal
+        if len(chosen_goals) == 0:
+            chosen_goals = ["The Caves Boss"]
         return category_name in chosen_goals
     return None
 
@@ -21,8 +24,11 @@ def before_is_item_enabled(multiworld: MultiWorld, player: int, item:  dict[str,
 def before_is_location_enabled(multiworld: MultiWorld, player: int, location:  dict[str, Any]) -> Optional[bool]:
     if "GoalOption" in location["category"]:
         from ..Helpers import get_option_value
-        chosen_goals = get_option_value(multiworld, player, "goals")
-        return location["name"] in chosen_goals
+        chosen_goals = set(get_option_value(multiworld, player, "goals"))
+        # Fallback if User chooses no Goal
+        if len(chosen_goals) == 0:
+            chosen_goals = {"The Caves Boss"}
+        return bool(set(location["category"]) & chosen_goals)
     return None
 
 # Use this if you want to override the default behavior of is_option_enabled

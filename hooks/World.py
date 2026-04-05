@@ -42,7 +42,12 @@ def before_generate_early(world: World, multiworld: MultiWorld, player: int) -> 
     This is the earliest hook called during generation, before anything else is done.
     Use it to check or modify incompatible options, or to set up variables for later use.
     """
-    pass
+    if len(world.options.goals.value) == 0:
+        logging.info("No Goal chosen, adjusting to Caves Boss")
+        world.options.goals.value.add("The Caves Boss")
+    if world.options.goal_amount.value == 0 or world.options.goal_amount.value > len(world.options.goals.value):
+        logging.info("Setting goal_amount to all")
+        world.options.goal_amount.value = len(world.options.goals.value)
 
 # Called before regions and locations are created. Not clear why you'd want this, but it's here. Victory location is included, but Victory event is not placed yet.
 def before_create_regions(world: World, multiworld: MultiWorld, player: int):
@@ -70,14 +75,7 @@ def after_create_regions(world: World, multiworld: MultiWorld, player: int):
 #       will create 5 items that are the "useful trap" class
 # {"Item Name": {ItemClassification.useful: 5}} <- You can also use the classification directly
 def before_create_items_all(item_config: dict[str, int|dict], world: World, multiworld: MultiWorld, player: int) -> dict[str, int|dict]:
-    goalAmount = len(world.options.goals.value)
-
-    if goalAmount == 0:
-        logging.error("No goal chosen. Generation will fail. TODO: fallback to e.g. Alley")
-        raise Exception("No goal chosen. Set at least one of these to true: caves_as_goal, boneyard_as_goal")
-
     item_config.update({
-        "Goal Progression": goalAmount,
         "Choose Skill": world.options.choose_skill_amount.value,
         "Choose Passive for a single combat": world.options.choose_passive_amount.value,
         "Obtain Random Uncommon Item": world.options.uncommon_items_amount.value,
