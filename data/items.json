@@ -4,7 +4,8 @@
     "name": "The Sewers Unlock",
     "category": [
       "Regions",
-      "CavesPath"
+      "CavesPath",
+      "The Caves Boss"
     ],
     "progression": true
   },
@@ -13,7 +14,8 @@
     "name": "The Caves Unlock",
     "category": [
       "Regions",
-      "CavesPath"
+      "CavesPath",
+      "The Caves Boss"
     ],
     "progression": true
   },
@@ -22,7 +24,8 @@
     "name": "The Junkyard Unlock",
     "category": [
       "Regions",
-      "BoneyardPath"
+      "BoneyardPath",
+      "The Boneyard Boss"
     ],
     "progression": true
   },
@@ -31,13 +34,14 @@
     "name": "The Boneyard Unlock",
     "category": [
       "Regions",
-      "BoneyardPath"
+      "BoneyardPath",
+      "The Boneyard Boss"
     ],
     "progression": true
   },
   {
     "count": "3",
-    "name": "Progressive Cat",
+    "name": "Additional Cat",
     "category": [
       "Progression"
     ],

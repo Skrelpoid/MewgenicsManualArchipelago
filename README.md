@@ -5,7 +5,7 @@ Current Ideas:
 Goal: Specific Bosses or Variable Boss of Area, Depending on setting
 
 Items:
-* 3 Progressive Cat: Start with one, get up to 4
+* 3 Additional Cat: Start with one, get up to 4
 * 6 Classes, Collarless excluded, maybe also from further acts (Configurable)
 * 5 Item Slots: Weapon, Head, Neck etc...
 * 4 Areas: Sewers, Caves, Junk Yard, Bone Yard
@@ -57,7 +57,7 @@ Since mewgenics is already very random I decided that I want the randomization i
 House Bosses are also not currently included in this manual.
 
 Checklist when starting a run:
-How many Progressive Cats do you have? You can take n+1 Cats per Progressive Cat. E.g. if you have 0, take 1 Cat, if you have 2, take 3 Cats
+How many Additional Cats do you have? You can take n+1 Cats per Additional Cat. E.g. if you have 0, take 1 Cat, if you have 2, take 3 Cats
 
 Which classes do you have unlocked? You can define which classes you have want to play with in the yaml. You can also define which classes you wanna start with with starting_items. It is recommended to only give yourself a max of 1-2 starting classes so each archipelago feels different because you use different class combinations
 
