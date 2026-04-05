@@ -1,7 +1,5 @@
 # Object classes from AP that represent different types of options that you can create
 from Options import Option, FreeText, NumericOption, Toggle, DefaultOnToggle, Choice, TextChoice, Range, NamedRange, OptionGroup, PerGameCommonOptions, OptionSet
-# These helper methods allow you to determine if an option has been set, or what its value is, for any player in the multiworld
-from ..Helpers import is_option_enabled, get_option_value
 from typing import Type, Any
 
 
@@ -21,15 +19,19 @@ from typing import Type, Any
 # Then, to see if the option is set, you can call is_option_enabled or get_option_value.
 #####################################################################
 
-class EnabledChampions(OptionSet):
-    """Champions that will be in your world."""
-    display_name = "Enabled Champions"
-    valid_keys = ["1", "2", "3"]
+class Goals(OptionSet):
+    """
+    Which Bosses you need to beat to goal. If you have multiple goals, you need to achieve all of them.
+    Possible Bosses: ["The Caves Boss", "The Boneyard Boss"]
+    """
+    display_name = "Goals"
+    from ..Locations import location_name_groups
+    valid_keys = location_name_groups["GoalOption"]
     default = frozenset(valid_keys)
 
 # This is called before any manual options are defined, in case you want to define your own with a clean slate or let Manual define over them
 def before_options_defined(options: dict[str, Type[Option[Any]]]) -> dict[str, Type[Option[Any]]]:
-    #options["enabled_champions"] = EnabledChampions
+    options["goals"] = Goals
     return options
 
 

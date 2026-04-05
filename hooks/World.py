@@ -70,11 +70,7 @@ def after_create_regions(world: World, multiworld: MultiWorld, player: int):
 #       will create 5 items that are the "useful trap" class
 # {"Item Name": {ItemClassification.useful: 5}} <- You can also use the classification directly
 def before_create_items_all(item_config: dict[str, int|dict], world: World, multiworld: MultiWorld, player: int) -> dict[str, int|dict]:
-    goalAmount = 0
-    if world.options.caves_as_goal.value:
-        goalAmount = goalAmount + 1
-    if world.options.boneyard_as_goal.value:
-        goalAmount = goalAmount + 1
+    goalAmount = len(world.options.goals.value)
 
     if goalAmount == 0:
         logging.error("No goal chosen. Generation will fail. TODO: fallback to e.g. Alley")

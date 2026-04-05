@@ -5,18 +5,24 @@ from BaseClasses import MultiWorld
 # Use this if you want to override the default behavior of is_option_enabled
 # Return True to enable the category, False to disable it, or None to use the default behavior
 def before_is_category_enabled(multiworld: MultiWorld, player: int, category_name: str) -> Optional[bool]:
+    from ..Locations import location_name_groups
+    if category_name in location_name_groups["GoalOption"]:
+        # This category is the name of a GoalOpion
+        from ..Helpers import get_option_value
+        chosen_goals = get_option_value(multiworld, player, "goals")
+        return category_name in chosen_goals
     return None
 
 def before_is_item_enabled(multiworld: MultiWorld, player: int, item:  dict[str, Any]) -> Optional[bool]:
-    if "Champion" in item["category"]:
-        from ..Helpers import get_option_value
-        enabled_champions = get_option_value(multiworld, player, "enabled_champions")
-        return item["name"] in enabled_champions
     return None
 
 # Use this if you want to override the default behavior of is_option_enabled
 # Return True to enable the location, False to disable it, or None to use the default behavior
 def before_is_location_enabled(multiworld: MultiWorld, player: int, location:  dict[str, Any]) -> Optional[bool]:
+    if "GoalOption" in location["category"]:
+        from ..Helpers import get_option_value
+        chosen_goals = get_option_value(multiworld, player, "goals")
+        return location["name"] in chosen_goals
     return None
 
 # Use this if you want to override the default behavior of is_option_enabled
