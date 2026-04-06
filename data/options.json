@@ -7,7 +7,7 @@
         }
     },
     "user": {
-        "challenge_locations":{
+        "challenge_locations": {
             "type": "Toggle",
             "default": true,
             "description": [
@@ -15,7 +15,32 @@
             ],
             "group": "Locations"
         },
-        "choose_skill_amount":{
+        "starting_difficulty": {
+            "type": "Choice",
+            "description": [
+                "How many Additional Cats, Progressive Skills, Classes and Item Slots you want to start with. See each value for details.",
+                "Setting an item in start_inventory_from_pool directly overwrites the value chosen here, for that item only",
+                "Baby Mode:  3 Additional Cats, 4 Progressive Skills, 6 Classes, 5 Item Slots",
+                "Super Easy: 3 Additional Cats, 3 Progressive Skills, 4 Classes, 4 Item Slots",
+                "Easy:       2 Additional Cats, 2 Progressive Skills, 3 Classes, 3 Item Slots",
+                "Normal:     1 Additional Cat,  2 Progressive Skills, 2 Classes, 2 Item Slots",
+                "Hard:       1 Additional Cat,  1 Progressive Skills, 1 Class,   1 Item Slot",
+                "Super Hard: 1 Additional Cat",
+                "Impossible: Nothing"
+            ],
+            "default": 3,
+            "values": {
+                "Baby Mode": 0,
+                "Super Easy": 1,
+                "Easy": 2,
+                "Normal": 3,
+                "Hard": 4,
+                "Super Hard": 5,
+                "Impossible": 6
+            },
+            "group": "Start"
+        },
+        "choose_skill_amount": {
             "type": "Range",
             "description": [
                 "How many Choose Skill items are in the item pool. Min: 0, Default: 4, Max: 10"
@@ -25,7 +50,7 @@
             "range_end": 10,
             "group": "Useful Items"
         },
-        "choose_passive_amount":{
+        "choose_passive_amount": {
             "type": "Range",
             "description": [
                 "How many Choose Passive for a single combat items are in the item pool. Min: 0, Default: 4, Max: 10"
@@ -35,7 +60,7 @@
             "range_end": 10,
             "group": "Useful Items"
         },
-        "uncommon_items_amount":{
+        "uncommon_items_amount": {
             "type": "Range",
             "description": [
                 "How many Obtain Random Uncommon Items are in the item pool. Min: 0, Default: 10, Max: 20"
@@ -45,7 +70,7 @@
             "range_end": 20,
             "group": "Useful Items"
         },
-        "rare_items_amount":{
+        "rare_items_amount": {
             "type": "Range",
             "description": [
                 "How many Obtain Random Rare Items are in the item pool. Min: 0, Default: 5, Max: 10"
@@ -55,7 +80,7 @@
             "range_end": 10,
             "group": "Useful Items"
         },
-        "very_rare_items_amount":{
+        "very_rare_items_amount": {
             "type": "Range",
             "description": [
                 "How many Obtain Random Very Rare Items are in the item pool. Min: 0, Default: 3, Max: 5"
@@ -66,5 +91,4 @@
             "group": "Useful Items"
         }
     }
-
 }

@@ -2,6 +2,7 @@
 from typing import Any
 from worlds.AutoWorld import World
 from BaseClasses import MultiWorld, CollectionState, Item
+from collections import Counter
 
 # Object classes from Manual -- extending AP core -- representing items and locations that are used in generation
 from ..Items import ManualItem
@@ -17,6 +18,8 @@ from ..Helpers import is_option_enabled, get_option_value, format_state_prog_ite
 
 # calling logging.info("message") anywhere below in this file will output the message to both console and log file
 import logging
+
+from typing import List, Set, Dict
 
 ########################################################################################
 ## Order of method calls when the world generates:
@@ -37,17 +40,53 @@ import logging
 def hook_get_filler_item_name(world: World, multiworld: MultiWorld, player: int) -> str | bool:
     return False
 
+# Ordered data indexed by level
+starting_difficulties = [
+    {"Additional Cat": 3, "Progressive Skill": 4, "Classes": 6, "Item Slots": 5},  # 0 Baby Mode
+    {"Additional Cat": 3, "Progressive Skill": 3, "Classes": 4, "Item Slots": 4},  # 1 Super Easy
+    {"Additional Cat": 2, "Progressive Skill": 2, "Classes": 3, "Item Slots": 3},  # 2 Easy
+    {"Additional Cat": 1, "Progressive Skill": 2, "Classes": 2, "Item Slots": 2},  # 3 Normal
+    {"Additional Cat": 1, "Progressive Skill": 1, "Classes": 1, "Item Slots": 1},  # 4 Hard
+    {"Additional Cat": 1},                                                         # 5 Super Hard
+    {}                                                                             # 6 Impossible
+]
+
 def before_generate_early(world: World, multiworld: MultiWorld, player: int) -> None:
     """
     This is the earliest hook called during generation, before anything else is done.
     Use it to check or modify incompatible options, or to set up variables for later use.
     """
     if len(world.options.goals.value) == 0:
-        logging.info("No Goal chosen, adjusting to Caves Boss")
+        logging.warning("No Goal chosen, falling back to Caves Boss")
         world.options.goals.value.add("The Caves Boss")
     if world.options.goal_amount.value == 0 or world.options.goal_amount.value > len(world.options.goals.value):
         logging.info("Setting goal_amount to all")
         world.options.goal_amount.value = len(world.options.goals.value)
+    starting_difficulty = starting_difficulties[world.options.starting_difficulty.value]
+    # Merge chosen starting_difficulty items with user chosen starting_items, where starting_items overwrites duplicate value
+    starting_items = starting_difficulty | world.options.start_inventory_from_pool.value
+
+    world.options.start_inventory_from_pool.value = handle_item_categories(world, Counter(starting_items))
+    
+
+def handle_item_categories(world: World, item_names: Counter) -> Counter:
+    result = Counter()
+
+    for name, count in item_names.items():
+        if name in world.item_name_groups:
+            pool = world.item_name_groups[name]
+
+            if count > len(pool):
+                logging.warning(f"{count} items wanted from category {name}, which is more than the {len(pool)} items in that category. Adjusting to {len(pool)}")
+                count = len(pool)
+
+            chosen = world.random.sample(list(pool), count)
+
+            result.update(chosen)
+        else:
+            result[name] += count
+
+    return result
 
 # Called before regions and locations are created. Not clear why you'd want this, but it's here. Victory location is included, but Victory event is not placed yet.
 def before_create_regions(world: World, multiworld: MultiWorld, player: int):

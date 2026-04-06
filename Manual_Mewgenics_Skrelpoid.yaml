@@ -66,8 +66,7 @@ Manual_Mewgenics_Skrelpoid:
   goals:
     # Which Bosses you need to beat to goal. If you have multiple goals, you need to achieve all of them.
     # Possible Bosses: ["The Caves Boss", "The Boneyard Boss"]
-    - The Caves Boss
-    - The Boneyard Boss
+    ['The Boneyard Boss', 'The Caves Boss']
 
   goal_amount:
     # How many of the Goals defined above you need to win the game. (0 == All)
@@ -89,6 +88,27 @@ Manual_Mewgenics_Skrelpoid:
     # Adds 25 challenges as locations, like e.g. Kill 2 Birds, Win in 1 Round, Revive a body
     'false': 0
     'true': 50
+
+  #########
+  # Start #
+  #########
+  starting_difficulty:
+    # How many Additional Cats, Progressive Skills, Classes and Item Slots you want to start with. See each value for details.
+    # Setting an item in start_inventory_from_pool directly overwrites the value chosen here, for that item only
+    # Baby Mode:  3 Additional Cats, 4 Progressive Skills, 6 Classes, 5 Item Slots
+    # Super Easy: 3 Additional Cats, 3 Progressive Skills, 4 Classes, 4 Item Slots
+    # Easy:       2 Additional Cats, 2 Progressive Skills, 3 Classes, 3 Item Slots
+    # Normal:     1 Additional Cat,  2 Progressive Skills, 2 Classes, 2 Item Slots
+    # Hard:       1 Additional Cat,  1 Progressive Skills, 1 Class,   1 Item Slot
+    # Super Hard: 1 Additional Cat
+    # Impossible: Nothing
+    baby mode: 0
+    super easy: 0
+    easy: 0
+    normal: 50
+    hard: 0
+    super hard: 0
+    impossible: 0
 
   ################
   # Useful Items #
