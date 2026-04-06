@@ -22,12 +22,12 @@ from typing import Type, Any
 class Goals(OptionSet):
     """
     Which Bosses you need to beat to goal. If you have multiple goals, you need to achieve all of them.
-    Possible Bosses: ["The Caves Boss", "The Boneyard Boss"]
+    Possible Bosses: ["The Caves Boss", "The Boneyard Boss", "The Throbbing Domain Boss"]
     """
     display_name = "Goals"
     from ..Locations import location_name_groups
     valid_keys = location_name_groups["GoalOption"]
-    default = frozenset(valid_keys)
+    default = ["The Caves Boss", "The Boneyard Boss"]
 
 class GoalAmount(NamedRange):
     """

@@ -415,6 +415,55 @@
     ]
   },
   {
+    "name": "The Throbbing Domain Combat 1",
+    "region": "The Throbbing Domain",
+    "category": [
+      "The Throbbing Domain",
+      "ThrobbingDomainPath",
+      "The Throbbing Domain Boss"
+    ]
+  },
+  {
+    "name": "The Throbbing Domain Combat 2",
+    "region": "The Throbbing Domain",
+    "category": [
+      "The Throbbing Domain",
+      "ThrobbingDomainPath",
+      "The Throbbing Domain Boss"
+    ]
+  },
+  {
+    "name": "The Throbbing Domain Combat 3",
+    "region": "The Throbbing Domain",
+    "category": [
+      "The Throbbing Domain",
+      "ThrobbingDomainPath",
+      "The Throbbing Domain Boss"
+    ]
+  },
+  {
+    "name": "The Throbbing Domain Hard Combat",
+    "region": "The Throbbing Domain",
+    "category": [
+      "The Throbbing Domain",
+      "ThrobbingDomainPath",
+      "The Throbbing Domain Boss"
+    ]
+  },
+  {
+    "name": "The Throbbing Domain Boss",
+    "region": "The Throbbing Domain",
+    "category": [
+      "The Throbbing Domain",
+      "ThrobbingDomainPath",
+      "The Throbbing Domain Boss",
+      "GoalOption"
+    ],
+    "place_item": [
+      "Goal Progression"
+    ]
+  },
+  {
     "name": "1 Round Win",
     "category": [
       "Challenges"

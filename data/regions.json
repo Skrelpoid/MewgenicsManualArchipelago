@@ -14,7 +14,9 @@
     "requires": "(|The Sewers Unlock| AND |@Classes:1|) AND ((|Progressive Skill:2| AND |@Item Slots:1|) OR (|Additional Cat:1| AND |Progressive Skill:1|) OR (|Additional Cat:2|))"
   },
   "The Caves": {
-    "connects_to": [],
+    "connects_to": [
+      "The Throbbing Domain"
+    ],
     "requires": "(|The Caves Unlock| AND |@Classes:3|) AND ((|Progressive Skill:3| AND |@Item Slots:4|) OR (|Additional Cat:1| AND |Progressive Skill:2| AND |@Item Slots:3|) OR (|Additional Cat:2| AND |Progressive Skill:1| AND |@Item Slots:2|) OR (|Additional Cat:3| AND |@Item Slots:1|))"
   },
   "The Junkyard": {
@@ -24,7 +26,13 @@
     "requires": "(|The Junkyard Unlock| AND |@Classes:1|) AND ((|Progressive Skill:2| AND |@Item Slots:1|) OR (|Additional Cat:1| AND |Progressive Skill:1|) OR (|Additional Cat:2|))"
   },
   "The Boneyard": {
-    "connects_to": [],
+    "connects_to": [
+      "The Throbbing Domain"
+    ],
     "requires": "(|The Boneyard Unlock| AND |@Classes:3|) AND ((|Progressive Skill:3| AND |@Item Slots:4|) OR (|Additional Cat:1| AND |Progressive Skill:2| AND |@Item Slots:3|) OR (|Additional Cat:2| AND |Progressive Skill:1| AND |@Item Slots:2|) OR (|Additional Cat:3| AND |@Item Slots:1|))"
+  },
+  "The Throbbing Domain": {
+    "connects_to": [],
+    "requires": "|The Throbbing Domain Unlock| AND |@Classes:ALL| AND |Progressive Skill:4| AND ((|Additional Cat:2| AND |@Item Slots:5|) OR (|Additional Cat:3| AND |@Item Slots:4|))"
   }
 }

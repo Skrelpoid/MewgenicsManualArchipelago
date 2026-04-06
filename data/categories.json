@@ -15,10 +15,16 @@
     "BoneyardPath": {
         "hidden": true
     },
+    "ThrobbingDomainPath": {
+        "hidden": true
+    },
     "The Caves Boss": {
         "hidden": true
     },
     "The Boneyard Boss": {
+        "hidden": true
+    },
+    "The Throbbing Domain Boss": {
         "hidden": true
     },
     "Challenges": {

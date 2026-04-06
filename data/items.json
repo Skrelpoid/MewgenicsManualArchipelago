@@ -40,7 +40,17 @@
     "progression": true
   },
   {
-    "count": "3",
+    "count": 1,
+    "name": "The Throbbing Domain Unlock",
+    "category": [
+      "Regions",
+      "ThrobbingDomainPath",
+      "The Throbbing Domain Boss"
+    ],
+    "progression": true
+  },
+  {
+    "count": 3,
     "name": "Additional Cat",
     "category": [
       "Progression"
@@ -152,7 +162,7 @@
     "progression": true
   },
   {
-    "count": 2,
+    "count": 3,
     "name": "Goal Progression",
     "category": [
       "Victory"

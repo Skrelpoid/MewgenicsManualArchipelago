@@ -56,9 +56,17 @@ def before_generate_early(world: World, multiworld: MultiWorld, player: int) -> 
     This is the earliest hook called during generation, before anything else is done.
     Use it to check or modify incompatible options, or to set up variables for later use.
     """
+    fallback_boss_region_1 = world.random.choice(["The Caves Boss", "The Boneyard Boss"])
     if len(world.options.goals.value) == 0:
-        logging.warning("No Goal chosen, falling back to Caves Boss")
-        world.options.goals.value.add("The Caves Boss")
+        logging.warning(f"No Goal chosen, falling back to {fallback_boss_region_1}")
+        world.options.goals.value.add(fallback_boss_region_1)
+    if "The Throbbing Domain Boss" in world.options.goals.value and ("The Caves Boss" not in world.options.goals.value and "The Boneyard Boss" not in world.options.goals.value):
+        logging.warning(f"Throbbing Domain Boss not accessible without The Caves or The Boneyard. Activating {fallback_boss_region_1}")
+        world.options.goals.value.add(fallback_boss_region_1)
+        if world.options.goal_amount.value != 0: # 0 == all
+            # We added another boss so we need to increase the amount of bosses you need to beat
+            world.options.goal_amount.value = world.options.goal_amount.value + 1
+
     if world.options.goal_amount.value == 0 or world.options.goal_amount.value > len(world.options.goals.value):
         logging.info("Setting goal_amount to all")
         world.options.goal_amount.value = len(world.options.goals.value)
