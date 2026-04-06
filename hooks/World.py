@@ -76,6 +76,7 @@ def after_create_regions(world: World, multiworld: MultiWorld, player: int):
 # {"Item Name": {ItemClassification.useful: 5}} <- You can also use the classification directly
 def before_create_items_all(item_config: dict[str, int|dict], world: World, multiworld: MultiWorld, player: int) -> dict[str, int|dict]:
     item_config.update({
+        "Goal Progression": len(world.options.goals.value),
         "Choose Skill": world.options.choose_skill_amount.value,
         "Choose Passive for a single combat": world.options.choose_passive_amount.value,
         "Obtain Random Uncommon Item": world.options.uncommon_items_amount.value,
